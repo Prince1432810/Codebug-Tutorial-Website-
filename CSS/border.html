@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../bug1.png"/>
+    <title>CodeBug - Making Bug Fixes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <nav class="navbar bg-dark sticky-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+          <label for="snav"><span class="material-symbols-outlined mybtn btn" >sort</span></label>
+          <a class="navbar-brand" href="#"><b>&lt;&Backslash;&gt; CodeBug</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../docs.html">Docs</a>
+              </li>
+              <li class="nav-item">
+                <a href="../about_us.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="../contact_us.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Compiler
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://www.programiz.com/c-programming/online-compiler/">C</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/cpp-programming/online-compiler/">C++</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/java-programming/online-compiler/">Java</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/html/online-compiler/">HTML, CSS, JS</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/python-programming/online-compiler/">Python</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/csharp-programming/online-compiler/">C#</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/php/online-compiler/">PHP</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <label class="theme" for="changeColorCheckbox">
+                  <input type="checkbox" class="hide" id="changeColorCheckbox">
+                  <span class="material-symbols-outlined nav-link">light_mode</span>
+                </label>
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <div class="navbar2">
+      <div class="nav-container">
+        <a href="../HTML/index.html" class="html-nav">HTML</a>
+        <a href="../CSS/index.html" class="css-nav" id="full">CSS</a>
+        <a class="js-nav disable" >JavaScript</a>
+        <a href="../Java/index.html" class="java-nav">Java</a>
+        <a class="c-nav disable" >C</a>
+        <a class="cpp-nav disable" >C++</a>
+      </div>
+    </div>
+    <input type="checkbox" id="snav">
+
+    <div class="main">
+      <section class="overlay"></section>
+         <aside>
+            <div class="sidebar" id="sidebar">
+
+                <h4>CSS Getting Started</h4>
+      
+                <a href="index.html">What is CSS ?</a>
+                <a href="basic_css.html">Basic CSS format</a>
+                <a href="types.html">Types of CSS </a>
+                <a href="color_property.html">Color Property</a>
+                <!-- color system -->
+                <a href="background_color.html">Background Color Property</a>
+                <a href="text_align.html">Text Align Property</a>
+                <a href="font_align.html">Font Align & Text Decoration</a>
+                <a href="line_height.html">Line Height & Letter Spacing</a>
+                <a href="units_css.html">Units in CSS</a>
+                <a href="font_family.html">Font Family</a>
+      
+                <h4>CSS Properties</h4>
+      
+                <a href="box_model.html">Box Model</a>
+                <a href="height_width.html">Height & Width</a>
+                <a href="border.html" class="cur-page">Border</a>
+                <!-- Border Radius -->
+                <a href="padding.html">Padding Property</a>
+                <a href="margin.html">Margin Prpperty</a>
+                <a href="size.html">Size Property</a>
+                <a href="forms.html">Forms Property</a>
+                <a href="image.html">Image</a>
+                <a href="video.html">Video</a>
+                
+                
+                <h4>CSS Designing</h4>
+                
+                <a href="display.html">CSS Display</a>
+                <a href="inline_block.html">Inline-Block</a>
+                <a href="flexbox.html">CSS FlexBox</a>
+                <a href="grid.html">CSS Grid</a>
+                <a href="queries.html">CSS Media Queries</a>
+                
+                <br><br>
+              </div>
+        </aside>
+    
+      <div class="main-content">
+        <main>
+          <div class="page-nav">
+            <a href="height_width.html" class="prev btn btn-outline-primary">&lt; Prev</a>
+            <a href="padding.html" class="next btn btn-outline-primary">Next &gt;</a>
+          </div>
+        <!-- content goes here  -->
+        <h1>Border Property In CSS</h1><br>
+        <p>In CSS, the border property is used to define the border around elements. It allows you to control the style, color, and width of the border. The border property is shorthand for setting the border-width, border-style, and border-color properties simultaneously. Here's a detailed explanation of each aspect of the border property:</p><br>
+
+        <ol>
+            <li><h3>Border Width (border-width) :</h3><ul>
+                <li>The border-width property sets the width of the border. It can be specified in various units such as pixels (px), ems (em), points (pt), or as a keyword like thin, medium, or thick.</li>
+                <li>You can specify the width of each side of the border individually using the border-top-width, border-right-width, border-bottom-width, and border-left-width properties.</li>
+                <li>Setting a single value for border-width applies the same width to all four sides of the border.</li>
+            </ul></li><br>
+
+            <li><h3>Border Style (border-style) :</h3><ul>
+                <li>The border-style property determines the style of the border. Common styles include solid, dashed, dotted, double, groove, ridge, inset, and outset.</li>
+                <li>You can specify the style of each side of the border individually using the border-top-style, border-right-style, border-bottom-style, and border-left-style properties.</li>
+                <li>Setting a single value for border-style applies the same style to all four sides of the border.</li>
+            </ul></li><br>
+            
+            <li><h3>Border Color (border-color) :</h3><ul>
+                <li>The border-color property sets the color of the border. You can specify the color using various formats such as hexadecimal (#RRGGBB), RGB (rgb()), RGBA (rgba()), HSL (hsl()), HSLA (hsla()), or by using color keywords.</li>
+                <li>Like width and style, you can specify the color of each side of the border individually using the border-top-color, border-right-color, border-bottom-color, and border-left-color properties.</li>
+                <li>Setting a single value for border-color applies the same color to all four sides of the border.</li>
+            </ul></li><br>
+
+            <li><h3>Border Shorthand (border) :</h3><ul>
+                <li>The border property is a shorthand property that combines border-width, border-style, and border-color.
+                <li>It follows the syntax: border: border-width border-style border-color;.</li>
+                <li>You can specify one, two, three, or four values for the border property, which correspond to the width, style, and color of the border respectively. If fewer than four values are provided, the missing values will be set to their initial values (medium solid black).</li>
+            </ul></li><br>
+            Example :
+<pre class="line-numbers"><code class="language-css">.border-example {
+    border: 2px solid red; /* Border with 2px width, solid style, and red color */
+}
+
+.border-individual {
+    border-width: 1px 2px 3px 4px; /* Top, Right, Bottom, Left widths respectively */
+    border-style: solid dashed dotted double; /* Top, Right, Bottom, Left styles respectively */
+    border-color: #333 #666 #999 #ccc; /* Top, Right, Bottom, Left colors respectively */
+}
+
+.border-shorthand {
+    border: 1px dashed #00f; /* Shorthand for width, style, and color */
+}
+</code></pre><br>
+
+        </ol>
+        <p>The border property is commonly used to add visual separation between elements and plays a significant role in web design for creating visually appealing layout</p>
+
+
+        <!-- content ends here  -->
+        </main>
+        <div class="footer">
+          <div class="brand footer-div">
+              <h2>&lt;\&gt; CodeBug</h2>
+        <p>Designed by Santoshi, Manjot, Prince, Priya, Monika with &hearts;</p>
+        <p>Students of Bachelor of Computer Application</p>
+        
+      </div>
+
+      <div class="our-srvcs footer-div">
+        <h2>Our Services</h2>
+        <ul>
+          <li>Web Design</li>
+          <li>Web Development</li>
+          <li>App Development</li>
+          <li>Website Maintanance</li>
+        </ul>
+      </div>
+
+      <div class="contact footer-div">
+        <h2>Contact Info</h2>
+        <ul>
+          <li><span class="material-symbols-outlined">call</span> 7696838961</li>
+          <li><span class="material-symbols-outlined">mail</span> prince1432810@gmail.com</li>
+          <li><i class="fa-brands fa-twitter"></i>@8001Prince4262</li>
+          <li><span class="material-symbols-outlined">location_on</span> Balachaur, 144526, SBS Nagar</li>
+        </ul>
+      </div>
+      </div>
+  </div>
+</div>
+<script src="../myjs.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

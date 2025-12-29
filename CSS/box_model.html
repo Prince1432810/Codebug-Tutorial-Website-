@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../bug1.png"/>
+    <title>CodeBug - Making Bug Fixes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <nav class="navbar bg-dark sticky-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+          <label for="snav"><span class="material-symbols-outlined mybtn btn" >sort</span></label>
+          <a class="navbar-brand" href="#"><b>&lt;&Backslash;&gt; CodeBug</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../docs.html">Docs</a>
+              </li>
+              <li class="nav-item">
+                <a href="../about_us.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="../contact_us.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Compiler
+                </a>
+                <ul class="dropdown-menu  dropdown-menu-end animate slideIn">
+                  <li><a class="dropdown-item" href="https://www.programiz.com/c-programming/online-compiler/">C</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/cpp-programming/online-compiler/">C++</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/java-programming/online-compiler/">Java</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/html/online-compiler/">HTML, CSS, JS</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/python-programming/online-compiler/">Python</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/csharp-programming/online-compiler/">C#</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/php/online-compiler/">PHP</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <label class="theme" for="changeColorCheckbox">
+                  <input type="checkbox" class="hide" id="changeColorCheckbox">
+                  <span class="material-symbols-outlined nav-link">light_mode</span>
+                </label>
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div class="navbar2">
+      <div class="nav-container">
+        <a href="../HTML/index.html" class="html-nav">HTML</a>
+        <a href="../CSS/index.html" class="css-nav" id="full">CSS</a>
+        <a class="js-nav disable" >JavaScript</a>
+        <a href="../Java/index.html" class="java-nav">Java</a>
+        <a class="c-nav disable" >C</a>
+        <a class="cpp-nav disable" >C++</a>
+      </div>
+    </div>
+    <input type="checkbox" id="snav">
+
+    <div class="main">
+      <section class="overlay"></section>
+         <aside>
+            <div class="sidebar" id="sidebar">
+
+                <h4>CSS Getting Started</h4>
+      
+                <a href="index.html">What is CSS ?</a>
+                <a href="basic_css.html">Basic CSS format</a>
+                <a href="types.html">Types of CSS </a>
+                <a href="color_property.html">Color Property</a>
+                <!-- color system -->
+                <a href="background_color.html">Background Color Property</a>
+                <a href="text_align.html">Text Align Property</a>
+                <a href="font_align.html">Font Align & Text Decoration</a>
+                <a href="line_height.html">Line Height & Letter Spacing</a>
+                <a href="units_css.html">Units in CSS</a>
+                <a href="font_family.html">Font Family</a>
+      
+                <h4>CSS Properties</h4>
+      
+                <a href="box_model.html" class="cur-page">Box Model</a>
+                <a href="height_width.html">Height & Width</a>
+                <a href="border.html">Border</a>
+                <!-- Border Radius -->
+                <a href="padding.html">Padding Property</a>
+                <a href="margin.html">Margin Prpperty</a>
+                <a href="size.html">Size Property</a>
+                <a href="forms.html">Forms Property</a>
+                <a href="image.html">Image</a>
+                <a href="video.html">Video</a>
+                
+                
+                <h4>CSS Designing</h4>
+                
+                <a href="display.html">CSS Display</a>
+                <a href="inline_block.html">Inline-Block</a>
+                <a href="flexbox.html">CSS FlexBox</a>
+                <a href="grid.html">CSS Grid</a>
+                <a href="queries.html">CSS Media Queries</a>
+                
+                <br><br>
+              </div>
+        </aside>
+    
+      <div class="main-content">
+        <main>
+          <div class="page-nav">
+            <a href="font_family.html" class="prev btn btn-outline-primary">&lt; Prev</a>
+            <a href="height_width.html" class="next btn btn-outline-primary">Next &gt;</a>
+          </div>
+        <!-- content goes here  -->
+        <h1>Box Model</h1><br>
+        <p>The Box Model is a fundamental concept in CSS (Cascading Style Sheets) that describes how elements on a web page are rendered and spaced out. It defines the content area, padding, border, and margin of an element, all of which contribute to its overall size and layout.</p>
+        <p>Here's a detailed breakdown of each component of the box model:</p><br>
+
+        <ol>
+            <li><h3>Content : </h3><ul>
+                <li>The content area is where the actual content of an element resides, such as text, images, or other media.</li>
+                <li>It's defined by the width and height properties, which specify the dimensions of the content area.</li>
+                <li>The content area does not include padding, border, or margin.</li>
+            </ul></li><br>
+
+                <li><h3>Padding : </h3><ul>
+                    <li>Padding is the space between the content area and the element's border.</li>
+                    <li>It's used to create space around the content, providing breathing room between the content and the border.</li>
+                    <li>Padding can be set using the padding property, which accepts values in pixels, ems, rems, percentages, etc.</li>
+                    <li> Padding can be specified individually for each side of the element using properties like padding-top, padding-right, padding-bottom, and padding-left.</li>
+                    <li>Padding helps control the spacing and layout of content within an element.</li>
+                </ul></li><br>
+
+                <li><h3>Border : </h3><ul>
+                    <li>The border surrounds the padding and content areas, providing a visible boundary for the element.</li>
+                    <li>Borders can be styled using properties such as border-width, border-style, and border-color.</li>
+                    <li>You can specify different border styles such as solid, dashed, dotted, double, etc., and custom size the border color and width.</li>
+                    <li>Borders can be set individually for each side of the element using properties like border-top, border-right, border-bottom, and border-left.</li>
+                    <li>Borders are useful for visually separating elements or creating decorative effects.</li>
+                </ul></li><br>
+
+                <li><h3>Margin : </h3><ul>
+                    <li>Margins are the space outside the border of an element, defining the distance between the element and its neighboring elements.</li>
+                    <li>Margins do not have a background color or border and are transparent.</li>
+                    <li>They're used to create space between elements, controlling the layout and spacing of elements on a webpage.</li>
+                    <li>Like padding, margins can be set using the margin property and its shorthand variants for individual sides.</li>
+                    <li>Negative margins can be used to overlap elements or adjust their positioning relative to one another.</li>
+                </ul></li><br>
+
+        </ol>
+
+            <p>To visualize the Box Model, let's consider a simple example with an HTML &lt;div&gt; element and its corresponding CSS:</p>
+                <p>HTML :</p>
+<pre class="line-numbers"><code class="language-css">&lt;div class="box"&gt;&lt;/div&gt;
+</code></pre><br>
+
+                <p>Output :</p>
+<pre class="line-numbers"><code class="language-css">.box {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 10px;
+}
+</code></pre><br>
+
+            <p>Understanding and effectively using the box model is crucial for designing and styling web pages. It allows web developers to control the size, spacing, and layout of elements, ultimately contributing to the overall visual design and user experience of a website.</p>
+
+        <!-- content ends here  -->
+        </main>
+        <div class="footer">
+          <div class="brand footer-div">
+              <h2>&lt;\&gt; CodeBug</h2>
+        <p>Designed by Santoshi, Manjot, Prince, Priya, Monika with &hearts;</p>
+        <p>Students of Bachelor of Computer Application</p>
+        
+      </div>
+
+      <div class="our-srvcs footer-div">
+        <h2>Our Services</h2>
+        <ul>
+          <li>Web Design</li>
+          <li>Web Development</li>
+          <li>App Development</li>
+          <li>Website Maintanance</li>
+        </ul>
+      </div>
+
+      <div class="contact footer-div">
+        <h2>Contact Info</h2>
+        <ul>
+          <li><span class="material-symbols-outlined">call</span> 7696838961</li>
+          <li><span class="material-symbols-outlined">mail</span> prince1432810@gmail.com</li>
+          <li><i class="fa-brands fa-twitter"></i>@8001Prince4262</li>
+          <li><span class="material-symbols-outlined">location_on</span> Balachaur, 144526, SBS Nagar</li>
+        </ul>
+      </div>
+      </div>
+  </div>
+</div>
+<script src="../myjs.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

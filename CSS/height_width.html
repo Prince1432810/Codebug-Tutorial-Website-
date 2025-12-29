@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../bug1.png"/>
+    <title>CodeBug - Making Bug Fixes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <nav class="navbar bg-dark sticky-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+          <label for="snav"><span class="material-symbols-outlined mybtn btn" >sort</span></label>
+          <a class="navbar-brand" href="#"><b>&lt;&Backslash;&gt; CodeBug</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../docs.html">Docs</a>
+              </li>
+              <li class="nav-item">
+                <a href="../about_us.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="../contact_us.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Compiler
+                </a>
+                <ul class="dropdown-menu  dropdown-menu-end animate slideIn">
+                  <li><a class="dropdown-item" href="https://www.programiz.com/c-programming/online-compiler/">C</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/cpp-programming/online-compiler/">C++</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/java-programming/online-compiler/">Java</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/html/online-compiler/">HTML, CSS, JS</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/python-programming/online-compiler/">Python</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/csharp-programming/online-compiler/">C#</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/php/online-compiler/">PHP</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <label class="theme" for="changeColorCheckbox">
+                  <input type="checkbox" class="hide" id="changeColorCheckbox">
+                  <span class="material-symbols-outlined nav-link">light_mode</span>
+                </label>
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div class="navbar2">
+      <div class="nav-container">
+        <a href="../HTML/index.html" class="html-nav">HTML</a>
+        <a href="../CSS/index.html" class="css-nav" id="full">CSS</a>
+        <a class="js-nav disable" >JavaScript</a>
+        <a href="../Java/index.html" class="java-nav">Java</a>
+        <a class="c-nav disable" >C</a>
+        <a class="cpp-nav disable" >C++</a>
+      </div>
+    </div>
+    <input type="checkbox" id="snav">
+
+    <div class="main">
+      <section class="overlay"></section>
+         <aside>
+            <div class="sidebar" id="sidebar">
+
+                <h4>CSS Getting Started</h4>
+      
+                <a href="index.html">What is CSS ?</a>
+                <a href="basic_css.html">Basic CSS format</a>
+                <a href="types.html">Types of CSS </a>
+                <a href="color_property.html">Color Property</a>
+                <!-- color system -->
+                <a href="background_color.html">Background Color Property</a>
+                <a href="text_align.html">Text Align Property</a>
+                <a href="font_align.html">Font Align & Text Decoration</a>
+                <a href="line_height.html">Line Height & Letter Spacing</a>
+                <a href="units_css.html">Units in CSS</a>
+                <a href="font_family.html">Font Family</a>
+      
+                <h4>CSS Properties</h4>
+      
+                <a href="box_model.html">Box Model</a>
+                <a href="height_width.html" class="cur-page">Height & Width</a>
+                <a href="border.html">Border</a>
+                <!-- Border Radius -->
+                <a href="padding.html">Padding Property</a>
+                <a href="margin.html">Margin Prpperty</a>
+                <a href="size.html">Size Property</a>
+                <a href="forms.html">Forms Property</a>
+                <a href="image.html">Image</a>
+                <a href="video.html">Video</a>
+                
+                
+                <h4>CSS Designing</h4>
+                
+                <a href="display.html">CSS Display</a>
+                <a href="inline_block.html">Inline-Block</a>
+                <a href="flexbox.html">CSS FlexBox</a>
+                <a href="grid.html">CSS Grid</a>
+                <a href="queries.html">CSS Media Queries</a>
+                
+                <br><br>
+              </div>
+        </aside>
+    
+      <div class="main-content">
+        <main>
+          <div class="page-nav">
+            <a href="box_model.html" class="prev btn btn-outline-primary">&lt; Prev</a>
+            <a href="border.html" class="next btn btn-outline-primary">Next &gt;</a>
+          </div>
+        <!-- content goes here  -->
+            <h1>Height Property In CSS</h1><br>
+            <p>In CSS (Cascading Style Sheets), the height and width properties are used to define the dimensions of an element on a web page. Here's a breakdown of each property:</p><br>
+
+              <ol>
+                <li><h3>Specifying Height :</h3><ul>
+                  <li>You can set the height of an element using various units such as pixels (px), percentages (%), ems (em), viewport height (vh), etc.</li>
+                  <li>If you set the height to a fixed value (e.g., 200px), the element's height will remain constant regardless of its content.</li>
+                  <li>Using percentage values for height sets the element's height relative to its containing block's height. For example, height: 50% will make the element half the height of its containing block.</li>
+                </ul></li><br>
+
+                <li><h3>Auto Height :</h3><ul>
+                  <li>Setting the height to auto allows the browser to calculate the height based on the content inside the element. This is particularly useful when you want the height of an element to adjust dynamically based on its content.</li>
+                  <li>Elements such as &lt;div&gt;, &lt;p&gt;, and &lt;span&gt; typically have their height set to auto by default.</li>
+                </ul></li><br>
+                <li><h3>Minimum and Maximum Height :</h3><ul>
+                  <li>You can also specify minimum and maximum heights for an element using the min-height and max-height properties, respectively. This ensures that the element's height remains within a certain range.</li>
+                  <li>For instance, setting min-height: 100px ensures that the element's height is at least 100 pixels, while max-height: 300px ensures that it does not exceed 300 pixels.</li>
+                </ul></li><br>
+                Example :
+<pre class="line-numbers"><code class="language-css">.box {
+  height: 200px; /* Fixed height of 200 pixels */
+}
+
+.dynamic-height {
+  height: auto; /* Height adjusts based on content */
+}
+
+.resizable {
+  min-height: 100px; /* Minimum height of 100 pixels */
+  max-height: 300px; /* Maximum height of 300 pixels */
+}
+</code></pre><br>
+            
+              </ol>
+              <p>The height property is essential for controlling the vertical dimension of elements in CSS layouts, allowing you to create visually appealing and responsive designs.</p>
+                <br>
+
+              <h1>Width Property In CSS</h1><br>
+              <p>In CSS, the width property is used to specify the width of an element. It determines the horizontal dimension of the content area of the element. Here's a detailed explanation of the width property:</p><br>
+
+              <ol>
+                <li><h3>Specifying Width : </h3><ul>
+                  <li>You can set the width of an element using various units such as pixels (px), percentages (%), ems (em), viewport width (vw), etc.
+                  <li>For example, width: 200px; sets the width to a fixed value of 200 pixels, while width: 50%; sets the width to be half of its containing block's width.
+                  <li>Using percentage values for width makes elements responsive, as they adjust to the size of their containing block.</li>
+                </ul></li><br>
+              
+                <li><h3>Auto Width : </h3><ul>
+                  <li>Setting the width to auto allows the browser to calculate the width based on the content inside the element. The element will expand horizontally to fit its content.
+                  <li>Elements such as &lt;div&gt;, &lt;span&gt;, and &lt;p&gt; typically have their width set to auto by default.</li>
+                </ul></li><br>
+                
+                <li><h3>Minimum and Maximum Width : </h3><ul>
+                  <li>You can also specify minimum and maximum widths for an element using the min-width and max-width properties, respectively. This ensures that the element's width remains within a certain range.
+                  <li>For example, min-width: 100px; ensures that the element's width is at least 100 pixels, while max-width: 500px; ensures that it does not exceed 500 pixels.</li>
+                </ul></li><br>
+
+                <li><h3>Box Sizing : </h3><ul>
+                  <li>The box-sizing property can affect how the width of an element is calculated. By default, the width property sets the width of the content area only, excluding padding and borders. However, you can change this behavior using the box-sizing property.</li>
+                  <li>Setting box-sizing: border-box; includes padding and borders in the specified width, ensuring that the total width of the element remains consistent.</li>
+                </ul></li><br>
+
+                Example : 
+<pre class="line-numbers"><code class="language-css">.box {
+  width: 200px; /* Fixed width of 200 pixels */
+}
+
+.responsive {
+  width: 50%; /* Width is 50% of its containing block */
+}
+
+.dynamic-width {
+  width: auto; /* Width adjusts based on content */
+}
+
+.limited-width {
+  min-width: 100px; /* Minimum width of 100 pixels */
+  max-width: 500px; /* Maximum width of 500 pixels */
+}
+
+.border-box {
+  box-sizing: border-box; /* Include padding and borders in the width */
+}
+</code></pre><br>
+
+              </ol>
+
+              <p>The width property is crucial for controlling the horizontal dimension of elements in CSS layouts, allowing you to create flexible and responsive designs.</p>
+             
+        <!-- content ends here  -->
+        </main>
+        <div class="footer">
+          <div class="brand footer-div">
+              <h2>&lt;\&gt; CodeBug</h2>
+        <p>Designed by Santoshi, Manjot, Prince, Priya, Monika with &hearts;</p>
+        <p>Students of Bachelor of Computer Application</p>
+        
+      </div>
+
+      <div class="our-srvcs footer-div">
+        <h2>Our Services</h2>
+        <ul>
+          <li>Web Design</li>
+          <li>Web Development</li>
+          <li>App Development</li>
+          <li>Website Maintanance</li>
+        </ul>
+      </div>
+
+      <div class="contact footer-div">
+        <h2>Contact Info</h2>
+        <ul>
+          <li><span class="material-symbols-outlined">call</span> 7696838961</li>
+          <li><span class="material-symbols-outlined">mail</span> prince1432810@gmail.com</li>
+          <li><i class="fa-brands fa-twitter"></i>@8001Prince4262</li>
+          <li><span class="material-symbols-outlined">location_on</span> Balachaur, 144526, SBS Nagar</li>
+        </ul>
+      </div>
+      </div>
+  </div>
+</div>
+<script src="../myjs.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../bug1.png"/>
+    <title>CodeBug - Making Bug Fixes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <nav class="navbar bg-dark sticky-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+          <label for="snav"><span class="material-symbols-outlined mybtn btn" >sort</span></label>
+          <a class="navbar-brand" href="#"><b>&lt;&Backslash;&gt; CodeBug</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../docs.html">Docs</a>
+              </li>
+              <li class="nav-item">
+                <a href="../about_us.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="../contact_us.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Compiler
+                </a>
+                <ul class="dropdown-menu  dropdown-menu-end animate slideIn">
+                  <li><a class="dropdown-item" href="https://www.programiz.com/c-programming/online-compiler/">C</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/cpp-programming/online-compiler/">C++</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/java-programming/online-compiler/">Java</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/html/online-compiler/">HTML, CSS, JS</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/python-programming/online-compiler/">Python</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/csharp-programming/online-compiler/">C#</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/php/online-compiler/">PHP</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <label class="theme" for="changeColorCheckbox">
+                  <input type="checkbox" class="hide" id="changeColorCheckbox">
+                  <span class="material-symbols-outlined nav-link">light_mode</span>
+                </label>
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div class="navbar2">
+      <div class="nav-container">
+        <a href="../HTML/index.html" class="html-nav">HTML</a>
+        <a href="../CSS/index.html" class="css-nav" id="full">CSS</a>
+        <a class="js-nav disable" >JavaScript</a>
+        <a href="../Java/index.html" class="java-nav">Java</a>
+        <a class="c-nav disable" >C</a>
+        <a class="cpp-nav disable" >C++</a>
+      </div>
+    </div>
+    <input type="checkbox" id="snav">
+
+    <div class="main">
+      <section class="overlay"></section>
+         <aside>
+            <div class="sidebar" id="sidebar">
+
+                <h4>CSS Getting Started</h4>
+      
+                <a href="index.html">What is CSS ?</a>
+                <a href="basic_css.html">Basic CSS format</a>
+                <a href="types.html">Types of CSS </a>
+                <a href="color_property.html" class="cur-page">Color Property</a>
+                <!-- color system -->
+                <a href="background_color.html">Background Color Property</a>
+                <a href="text_align.html">Text Align Property</a>
+                <a href="font_align.html">Font Align & Text Decoration</a>
+                <a href="line_height.html">Line Height & Letter Spacing</a>
+                <a href="units_css.html">Units in CSS</a>
+                <a href="font_family.html">Font Family</a>
+      
+                <h4>CSS Properties</h4>
+      
+                <a href="box_model.html">Box Model</a>
+                <a href="height_width.html">Height & Width</a>
+                <a href="border.html">Border</a>
+                <!-- Border Radius -->
+                <a href="padding.html">Padding Property</a>
+                <a href="margin.html">Margin Prpperty</a>
+                <a href="size.html">Size Property</a>
+                <a href="forms.html">Forms Property</a>
+                <a href="image.html">Image</a>
+                <a href="video.html">Video</a>
+                
+                
+                <h4>CSS Designing</h4>
+                
+                <a href="display.html">CSS Display</a>
+                <a href="inline_block.html">Inline-Block</a>
+                <a href="flexbox.html">CSS FlexBox</a>
+                <a href="grid.html">CSS Grid</a>
+                <a href="queries.html">CSS Media Queries</a>
+                
+                <br><br>
+              </div>
+        </aside>
+    
+      <div class="main-content">
+        <main>
+          <div class="page-nav">
+            <a href="types.html" class="prev btn btn-outline-primary">&lt; Prev</a>
+            <a href="background_color.html" class="next btn btn-outline-primary">Next &gt;</a>
+          </div>
+        <!-- content goes here  -->
+          <h1>Color Property</h1>
+          <p>The <b>color</b> property in CSS is used to specify the color of text content. It allows you to define the color of text using various formats such as named <b>colors</b>, <b>hexadecimal</b>, <b>RGB</b>, <b>RGBA</b>, <b>HSL</b>, or <b>HSLA</b> values.</p>
+          <p>Here's the explanation of each aspect : </p>
+          
+          <ol>
+            <li>
+                <h3>Named Colors : </h3>
+                <p>Named colors are predefined color keywords that you can use directly in your CSS. Some common examples include <b>red</b>, <b>blue</b>, <b>green</b>, <b>yellow</b>, etc. For example:</p>
+<pre class="line-numbers"><code class="language-css">color: red;</code></pre>
+            </li><br>
+
+            <li>
+                <h3>Hexadecimal Colors : </h3>
+                <p>Hexadecimal colors represent colors using a combination of six hexadecimal digits. Each pair of digits represents the intensity of the red, green, and blue components of the color respectively. For example : </p>
+<pre class="line-numbers"><code class="language-css">color: #FF0000; /* Red */
+color: #00FF00; /* Green */
+color: #0000FF; /* Blue */
+</code></pre>
+            </li><br>
+
+            <li>
+                <h3>RGB Colors : </h3>
+                <p>RGB (Red, Green, Blue) colors specify the intensity of each primary color component using numeric values ranging from 0 to 255. It's represented in the format <b>rgb(red, green, blue)</b>. For example : </p>
+<pre class="line-numbers"><code class="language-css">color: rgb(255, 0, 0); /* Red */
+color: rgb(0, 255, 0); /* Green */
+color: rgb(0, 0, 255); /* Blue */
+</code></pre>
+            </li><br>
+
+            <li>
+                <h3>RGBA Colors : </h3>
+                <p>RGBA (Red, Green, Blue, Alpha) colors are similar to RGB, but with an additional alpha channel that specifies the opacity of the color. The alpha value ranges from 0 (fully transparent) to 1 (fully opaque). It's represented in the format <b>rgba(red, green, blue, alpha)</b>. For example:</p>
+<pre class="line-numbers"><code class="language-css">color: rgba(255, 0, 0, 0.5); /* Semi-transparent red */</code></pre>
+            </li><br>
+
+            <li>
+                <h3>HSL Colors : </h3>
+                <p>HSL (Hue, Saturation, Lightness) colors represent colors using their hue, saturation, and lightness components. Hue is represented as an angle between 0 and 360 degrees on the color wheel, while saturation and lightness are represented as percentages. It's represented in the format <b>hsl(hue, saturation%, lightness%)</b>. For example:</p>
+<pre class="line-numbers"><code class="language-css">color: hsl(0, 100%, 50%); /* Red */
+color: hsl(120, 100%, 50%); /* Green */
+color: hsl(240, 100%, 50%); /* Blue */
+</code></pre>
+            </li><br>
+
+            <li>
+                <h3>HSLA Colors : </h3>
+                <p><b>HSLA (Hue, Saturation, Lightness, Alpha)</b> colors are similar to HSL, but with an additional alpha channel for specifying opacity. It's represented in the format <b>hsla(hue, saturation%, lightness%, alpha)</b>. For example:</p>
+<pre class="line-numbers"><code class="language-css">color: hsla(0, 100%, 50%, 0.5); /* Semi-transparent red */
+</code></pre><br>
+
+            <h3>Usage : </h3>
+            <p>You can apply the <b>color</b> property to various CSS selectors such as elements, classes, IDs, etc., to change the color of text content within those elements. For example:</p>
+<pre class="line-numbers"><code class="language-css">h1 {
+  color: blue;
+}
+
+p {
+  color: #FF0000;
+}
+</code></pre><br>
+            <p>In this example, all <b>&lt;h1&gt;</b> elements will have blue text, while all <b>&lt;p&gt;</b> elements will have red text.</p>
+            <p>Overall, the <b>color</b> property in CSS provides flexibility in defining text colors using a variety of formats, allowing web developers to create visually appealing and customizable designs.</p>
+            </li><br>
+          </ol>
+
+        <!-- content ends here  -->
+        </main>
+        <div class="footer">
+          <div class="brand footer-div">
+              <h2>&lt;\&gt; CodeBug</h2>
+        <p>Designed by Santoshi, Manjot, Prince, Priya, Monika with &hearts;</p>
+        <p>Students of Bachelor of Computer Application</p>
+        
+      </div>
+
+      <div class="our-srvcs footer-div">
+        <h2>Our Services</h2>
+        <ul>
+          <li>Web Design</li>
+          <li>Web Development</li>
+          <li>App Development</li>
+          <li>Website Maintanance</li>
+        </ul>
+      </div>
+
+      <div class="contact footer-div">
+        <h2>Contact Info</h2>
+        <ul>
+          <li><span class="material-symbols-outlined">call</span> 7696838961</li>
+          <li><span class="material-symbols-outlined">mail</span> prince1432810@gmail.com</li>
+          <li><i class="fa-brands fa-twitter"></i>@8001Prince4262</li>
+          <li><span class="material-symbols-outlined">location_on</span> Balachaur, 144526, SBS Nagar</li>
+        </ul>
+      </div>
+      </div>
+  </div>
+</div>
+<script src="../myjs.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
