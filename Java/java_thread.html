@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../bug1.png"/>
+    <title>CodeBug - Making Bug Fixes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <nav class="navbar bg-dark sticky-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+          <label for="snav"><span class="material-symbols-outlined mybtn btn" >sort</span></label>
+          <a class="navbar-brand" href="#"><b>&lt;&Backslash;&gt; CodeBug</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../docs.html">Docs</a>
+              </li>
+              <li class="nav-item">
+                <a href="../about_us.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="../contact_us.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Compiler
+                </a>
+                <ul class="dropdown-menu  dropdown-menu-end animate slideIn">
+                  <li><a class="dropdown-item" href="https://www.programiz.com/c-programming/online-compiler/">C</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/cpp-programming/online-compiler/">C++</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/java-programming/online-compiler/">Java</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/html/online-compiler/">HTML, CSS, JS</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/python-programming/online-compiler/">Python</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/csharp-programming/online-compiler/">C#</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/php/online-compiler/">PHP</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <label class="theme" for="changeColorCheckbox">
+                  <input type="checkbox" class="hide" id="changeColorCheckbox">
+                  <span class="material-symbols-outlined nav-link">light_mode</span>
+                </label>
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div class="navbar2">
+      <div class="nav-container">
+        <a href="../HTML/index.html" class="html-nav">HTML</a>
+        <a href="../CSS/index.html" class="css-nav">CSS</a>
+        <a class="js-nav disable" >JavaScript</a>
+        <a href="../Java/index.html" class="java-nav" id="full">Java</a>
+        <a class="c-nav disable" >C</a>
+        <a class="cpp-nav disable" >C++</a>
+      </div>
+    </div>
+    <input type="checkbox" id="snav">
+
+    <div class="main">
+      <section class="overlay"></section>
+      <aside>
+        <div class="sidebar" id="sidebar">
+          <h4>Introduction to Java</h4>
+          <a href="index.html">History and Evolution</a>
+          <a href="java_jbm.html">Java Virtual Machine(JVM)</a>
+          <a href="java_jdk.html">Java Development Kit(JDK)</a>
+   
+          <h4>Basic Concepts</h4>
+          <a href="java_var_datatype.html">Variables and Data Types</a>
+          <a href="java_operators.html">Operators</a>
+          <a href="java_controlflow.html">Control Flow</a>
+          <!-- <a href="#">Loops</a><br> -->
+
+          <h4>Object-Oriented Programming(OOP)</h4>       
+          <a href="java_class_obj.html">Classes and Objects</a>
+          <a href="java_inheritance.html">Inheritance</a>
+          <a href="java_poly.html">Polymorphism</a>
+          <a href="java_encap.html">Encapsualtion</a>
+          <a href="java_abs.html">Abstraction</a>
+
+          <h4>Exception Handling</h4>
+          <a href="java_try_catch.html">try,catch,finaly</a>
+          <a href="java_custom_exp.html">Custom Exceptions</a>
+
+          <h4>Collections Framework</h4> 
+          <a href="list_set.html">Lists,Sets,Maps</a>
+          <a href="arraylist.html">ArrayList,LinkedList</a>
+          <a href="java_hashset.html">HashSet,TreeSet</a>
+          <a href="hashmap.html">HashMap,TreeMap</a>
+  
+          <h4>File Handling</h4>
+          <a href="file_read_write.html">Reading and Writing Files</a>
+          <a href="fileio.html">File I/O Streams</a>
+
+          <h4>Multithreading</h4>
+          <a href="java_thread.html" class="cur-page">Thread</a>
+          <a href="java_syn.html">Synchronization</a>
+          <a href="java_thread_pool.html">Thread Pools</a>
+
+          <h4>Networking in Java</h4>
+          <a href="java_socket_prog.html">Socket Programming</a>
+          <a href="java_url.html">URL and HttpURLConnection</a>
+   
+          <h4>Database Connectivity</h4>
+          <a href="java_jdbc.html">JDBC(Java Database Connectivity)</a>
+
+          <h4>GUI Development</h4>
+          <a href="java_awt.html">AWT(Abstract Window Toolkit)</a>
+          <a href="java_swing.html">Swing</a>
+          <a href="javaFX.html">JavaFX</a>
+
+          <h4>Java EE(Enterprise Edition)</h4>
+          <a href="java_servlet.html">Servlets</a>
+          <a href="jsp.html">JSP(JavaServer Pages)</a>
+
+          <h4>Frameworks</h4>
+          <a href="java_spring_frame.html">Spring Framework</a>
+          <a href="java_hibernate.html">Hibernate</a>
+
+          <h4>Java Security</h4>
+          <a href="java_crypto.html">Cryptography</a>
+          <a href="java_secure.html">Secure Coding Practices</a>
+          
+          <h4>Others</h4>
+          <a href="java_lambda.html">Lambda Expressions and Functional Interfaces</a>
+          <a href="unit_test.html">Unit Testing with JUnit</a>
+          <a href="annoa.html">Annotations</a>
+          <a href="java_restful_web.html">Restful Web Services</a>
+          <a href="javaFX_for_desktop.html">JavaFX for Desktop Applications</a>
+          <a href="java_maven.html">Maven and Gradle for Build Automation</a>
+          <a href="java_best_prac.html">Java Best Practices and Design Patterns</a>     
+          <br><br>
+        </div>
+      </aside>
+    
+          <div class="main-content">
+            <main>
+              <div class="page-nav">
+                <a href="fileio.html" class="prev btn btn-outline-primary">&lt; Prev</a>
+            <a href="java_syn.html" class="next btn btn-outline-primary">Next &gt;</a>
+              </div>
+            
+
+            <h1>Multi threading in Java</h1><br>
+            <p>Multithreading in Java refers to the ability of a program to simultaneously execute multiple threads of execution. Each thread represents a separate path of execution within the program, allowing different parts of the program to run concurrently.Java's multithreading capabilities are particularly useful for tasks that can be parallelized, such as performing multiple calculations simultaneously, handling multiple client requests in a server application, or updating the user interface while processing background tasks.</p>
+            <p>Key concepts related to multithreading in Java include:</p>
+            <ol>
+              <li><h3>Thread : </h3>A thread is the smallest unit of execution in a program. Java allows you to create and manage threads using the Thread class or the Runnable interface.</li><br>
+              <li><h3>Concurrency : </h3>Concurrency refers to the ability of a program to handle multiple tasks concurrently. In Java, you can achieve concurrency by using multiple threads.</li><br>
+              <li><h3>Thread States : </h3>Threads in Java can be in different states, such as new, runnable, blocked, waiting, timed waiting, and terminated. These states indicate what the thread is currently doing or waiting for.</li><br>
+              <li><h3>Synchronization : </h3>Synchronization is used in multithreaded programs to ensure that only one thread can access a shared resource at a time. Java provides the synchronized keyword and java.util.concurrent package for synchronization.</li><br>
+              <li><h3>Thread Safety : </h3>Thread safety refers to writing code in such a way that it can be safely executed by multiple threads concurrently without causing issues like race conditions or data corruption.</li><br>
+              <li><h3>Thread Pool : </h3>A thread pool is a collection of pre-initialized threads that can be used to execute tasks. Java provides the ExecutorService interface and ThreadPoolExecutor class for managing thread pools.</li>
+             </ol>
+            <p>Multithreading in Java can improve the performance and responsiveness of applications by utilizing the available CPU resources more effectively. However, it also introduces complexities such as synchronization and coordination between threads, which need to be carefully managed to avoid issues.</p>
+             <br><br>
+
+             <h1>Thread In java</h1>
+             <p>In Java, a thread represents a separate path of execution within a program. Threads allow a program to perform multiple tasks concurrently, which can improve performance and responsiveness. Here's a detailed explanation of threads in Java:</p>
+             <ol>
+              <li><h3>Creating Thread : </h3>
+                <ul>
+                <li><b>Extending Thread class : </b>You can create a thread by extending the Thread class and overriding its run() method.</li>
+<pre class="line-numbers"><code class="language-js">class MyThread extends Thread {
+  public void run() {
+      // thread code
+  }
+}
+MyThread thread = new MyThread();
+thread.start();
+</code></pre><br>
+                <li><b>Implementing Runnable interface : </b>Another way to create a thread is by implementing the Runnable interface and passing an instance of the class to the Thread constructor.</li>
+<pre class="line-numbers"><code class="language-js">class MyRunnable implements Runnable {
+  public void run() {
+      // thread code
+  }
+}
+Thread thread = new Thread(new MyRunnable());
+thread.start();
+</code></pre><br>
+              </ul></li>
+
+              <li><h3>Starting a Thread : </h3>A thread is started by calling the start() method. This method allocates the necessary resources and calls the run() method internally.</li>
+<pre class="line-numbers"><code class="language-js">thread.start();
+</code></pre><br>
+
+              <li><h3>Thread States</h3>
+                <ul>
+                <li><h5 class="i">New : </h5>A thread is in the new state if it has been created but has not yet started.</li><br>
+                <li><h5 class="i">Runnable : </h5>A thread is in the runnable state if it's ready to run, but it has not been selected by the scheduler to run.</li><br>
+                <li><h5 class="i">Running : </h5>A thread enters the running state when the scheduler selects it to run.</li><br>
+                <li><h5 class="i">Blocked/Waiting : </h5>A thread can enter a blocked or waiting state for various reasons, such as waiting for I/O operations or waiting for another thread to complete.</li><br>
+                <li><h5 class="i">Dead : </h5>A thread enters the dead state when its run() method completes or when it is explicitly stopped</li><br>
+              </ul></li><br>
+
+              <li><h3>Thread Priority : </h3>Threads can have priorities ranging from 1 to 10 (1 being the lowest and 10 being the highest). The default priority is 5. You can set the priority using the setPriority() method.</li>
+<pre class="line-numbers"><code class="language-js">thread.start();
+</code></pre><br>
+
+              <li><h3>Synchronization : </h3>In multithreaded programs, synchronization is necessary to ensure that only one thread accesses a shared resource at a time. Java provides the synchronized keyword and java.util.concurrent package for synchronization.</li>
+<pre class="line-numbers"><code class="language-js">synchronized void synchronizedMethod() {
+  // synchronized code block
+}
+</code></pre><br>
+
+              <li><h3>Thread Safety : </h3>Thread safety ensures that a piece of code can be safely executed by multiple threads concurrently without causing any issues. It often involves using synchronization to protect shared resources.</li><br>
+
+              <li><h3>Thread Pool : </h3>A thread pool is a group of pre-initialized threads that are available to perform tasks. Java provides the ExecutorService interface and ThreadPoolExecutor class to create and manage thread pools.</li><br>
+              
+              <li><h3>Common Thread Methods : </h3><ul>
+                <li><h5 class="i">start() : </h5>Starts the execution of the thread.</li><br>
+                <li><h5 class="i">run() : </h5>Contains the code that will be executed by the thread.</li><br>
+                <li><h5 class="i">sleep() : </h5>Suspends the thread's execution for a specified period.</li><br>
+                <li><h5 class="i">join() : </h5>Waits for the thread to die.</li><br>
+                <li><h5 class="i">yield() : </h5>Causes the currently executing thread object to temporarily pause and allow other threads to execute.</li>
+              </ul></li>
+
+            </ol>
+            <p>Threads in Java provide a powerful way to write concurrent programs. However, managing threads correctly is crucial to avoid issues such as race conditions and deadlocks.</p>
+
+          </main>
+          <div class="footer">
+            <div class="brand footer-div">
+              <h2>&lt;\&gt; CodeBug</h2>
+              <p>Designed by Santoshi, Manjot, Prince, Priya, Monika with &hearts;</p>
+              <p>Students of Bachelor of Computer Application</p>
+              
+            </div>
+  
+            <div class="our-srvcs footer-div">
+              <h2>Our Services</h2>
+              <ul>
+                <li>Web Design</li>
+                <li>Web Development</li>
+                <li>App Development</li>
+                <li>Website Maintanance</li>
+              </ul>
+            </div>
+  
+            <div class="contact footer-div">
+              <h2>Contact Info</h2>
+              <ul>
+                <li><span class="material-symbols-outlined">call</span> 7696838961</li>
+                <li><span class="material-symbols-outlined">mail</span> prince1432810@gmail.com</li>
+                <li><i class="fa-brands fa-twitter"></i>@8001Prince4262</li>
+                <li><span class="material-symbols-outlined">location_on</span> Balachaur, 144526, SBS Nagar</li>
+              </ul>
+            </div>
+          </div>
+    </div>
+    </div>
+
+    <script src="../myjs.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

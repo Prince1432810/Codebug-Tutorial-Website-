@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../bug1.png"/>
+    <title>CodeBug - Making Bug Fixes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <nav class="navbar bg-dark sticky-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+          <label for="snav"><span class="material-symbols-outlined mybtn btn" >sort</span></label>
+          <a class="navbar-brand" href="#"><b>&lt;&Backslash;&gt; CodeBug</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../docs.html">Docs</a>
+              </li>
+              <li class="nav-item">
+                <a href="../about_us.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="../contact_us.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Compiler
+                </a>
+                <ul class="dropdown-menu  dropdown-menu-end animate slideIn">
+                  <li><a class="dropdown-item" href="https://www.programiz.com/c-programming/online-compiler/">C</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/cpp-programming/online-compiler/">C++</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/java-programming/online-compiler/">Java</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/html/online-compiler/">HTML, CSS, JS</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/python-programming/online-compiler/">Python</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/csharp-programming/online-compiler/">C#</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/php/online-compiler/">PHP</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <label class="theme" for="changeColorCheckbox">
+                  <input type="checkbox" class="hide" id="changeColorCheckbox">
+                  <span class="material-symbols-outlined nav-link">light_mode</span>
+                </label>
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div class="navbar2">
+      <div class="nav-container">
+        <a href="../HTML/index.html" class="html-nav">HTML</a>
+        <a href="../CSS/index.html" class="css-nav">CSS</a>
+        <a class="js-nav disable" >JavaScript</a>
+        <a href="../Java/index.html" class="java-nav" id="full">Java</a>
+        <a class="c-nav disable" >C</a>
+        <a class="cpp-nav disable" >C++</a>
+      </div>
+    </div>
+    <input type="checkbox" id="snav">
+
+    <div class="main">
+      <section class="overlay"></section>
+      <aside>
+        <div class="sidebar" id="sidebar">
+          <h4>Introduction to Java</h4>
+          <a href="index.html">History and Evolution</a>
+          <a href="java_jbm.html">Java Virtual Machine(JVM)</a>
+          <a href="java_jdk.html">Java Development Kit(JDK)</a>
+   
+          <h4>Basic Concepts</h4>
+          <a href="java_var_datatype.html">Variables and Data Types</a>
+          <a href="java_operators.html">Operators</a>
+          <a href="java_controlflow.html">Control Flow</a>
+          <!-- <a href="#">Loops</a><br> -->
+
+          <h4>Object-Oriented Programming(OOP)</h4>       
+          <a href="java_class_obj.html">Classes and Objects</a>
+          <a href="java_inheritance.html">Inheritance</a>
+          <a href="java_poly.html">Polymorphism</a>
+          <a href="java_encap.html">Encapsualtion</a>
+          <a href="java_abs.html" class="cur-page">Abstraction</a>
+
+          <h4>Exception Handling</h4>
+          <a href="java_try_catch.html">try,catch,finaly</a>
+          <a href="java_custom_exp.html">Custom Exceptions</a>
+
+          <h4>Collections Framework</h4> 
+          <a href="list_set.html">Lists,Sets,Maps</a>
+          <a href="arraylist.html">ArrayList,LinkedList</a>
+          <a href="java_hashset.html">HashSet,TreeSet</a>
+          <a href="hashmap.html">HashMap,TreeMap</a>
+  
+          <h4>File Handling</h4>
+          <a href="file_read_write.html">Reading and Writing Files</a>
+          <a href="fileio.html">File I/O Streams</a>
+
+          <h4>Multithreading</h4>
+          <a href="java_thread.html">Thread</a>
+          <a href="java_syn.html">Synchronization</a>
+          <a href="java_thread_pool.html">Thread Pools</a>
+
+          <h4>Networking in Java</h4>
+          <a href="java_socket_prog.html">Socket Programming</a>
+          <a href="java_url.html">URL and HttpURLConnection</a>
+   
+          <h4>Database Connectivity</h4>
+          <a href="java_jdbc.html">JDBC(Java Database Connectivity)</a>
+
+          <h4>GUI Development</h4>
+          <a href="java_awt.html">AWT(Abstract Window Toolkit)</a>
+          <a href="java_swing.html">Swing</a>
+          <a href="javaFX.html">JavaFX</a>
+
+          <h4>Java EE(Enterprise Edition)</h4>
+          <a href="java_servlet.html">Servlets</a>
+          <a href="jsp.html">JSP(JavaServer Pages)</a>
+
+          <h4>Frameworks</h4>
+          <a href="java_spring_frame.html">Spring Framework</a>
+          <a href="java_hibernate.html">Hibernate</a>
+
+          <h4>Java Security</h4>
+          <a href="java_crypto.html">Cryptography</a>
+          <a href="java_secure.html">Secure Coding Practices</a>
+          
+          <h4>Others</h4>
+          <a href="java_lambda.html">Lambda Expressions and Functional Interfaces</a>
+          <a href="unit_test.html">Unit Testing with JUnit</a>
+          <a href="annoa.html">Annotations</a>
+          <a href="java_restful_web.html">Restful Web Services</a>
+          <a href="javaFX_for_desktop.html">JavaFX for Desktop Applications</a>
+          <a href="java_maven.html">Maven and Gradle for Build Automation</a>
+          <a href="java_best_prac.html">Java Best Practices and Design Patterns</a>     
+          <br><br>
+        </div>
+      </aside>
+    
+          <div class="main-content">
+            <main>
+              <div class="page-nav">
+                
+            <a href="java_encap.html" class="prev btn btn-outline-primary">&lt; Prev</a>
+            <a href="java_try_catch.html" class="next btn btn-outline-primary">Next &gt;</a>
+              </div>
+            
+            <h1>Java Abstraction</h1><br>
+            <p>Abstraction in Java is a fundamental concept of object-oriented programming (OOP) that involves hiding the implementation details of a class and showing only the essential features of an object. It allows you to focus on what an object does rather than how it does it. Abstraction is implemented in Java using abstract classes and interfaces.</p>
+            <p>Here's a detailed explanation of abstraction in Java:</p>
+            <ol>
+                <li><h3>Abstract Classes : </h3>
+                  <ul>
+                    <li>Abstract classes in Java are used to define common characteristics and behaviors for a group of related classes.</li><br>
+                    <li>An abstract class cannot be instantiated on its own; it serves as a blueprint for other classes to extend from.</li><br>
+                    <li>Abstract classes can contain both abstract methods (methods without a body) and concrete methods (methods with an implementation).</li><br>
+                    <li>Concrete subclasses must provide implementations for all abstract methods of the abstract class.</li><br>
+                    <li>Abstract classes may also have constructors, fields, and non-abstract methods.</li><br>
+                    <li>Abstract classes are declared using the <b>' abstract '</b> keyword.</li></ul>
+<pre class="line-numbers"><code class="language-js">
+abstract class Shape {
+    abstract void draw(); // Abstract method
+}
+    
+class Circle extends Shape {
+    void draw() {
+        System.out.println("Drawing a circle");
+    }
+}  
+</code></pre><br>
+In this example, <b>' Shape '</b> is an abstract class with an abstract method <b>' draw() '</b>. The <b>' Circle '</b> class extends <b>' Shape '</b> and provides an implementation for the <b>' draw() '</b> method.
+                </li>
+            <br>
+
+                <li><h3>Interfaces : </h3>
+                  <ul>
+                    <li>Interfaces in Java are similar to abstract classes but are more abstract in nature.</li><br>
+                    <li>An interface can only contain method signatures (abstract methods), constant declarations, and default/static methods with implementations.</li><br>
+                    <li>A class can implement multiple interfaces but can only extend one class (abstract or concrete).</li><br>
+                    <li>Interfaces provide a way to achieve full abstraction, as implementing classes must provide implementations for all methods defined in the interface.</li><br>
+                    <li>Interfaces are declared using the <b>' interface '</b> keyword.</li></ul>
+<pre class="line-numbers"><code class="language-js">
+interface Animal {
+    void eat(); // Abstract method
+    void sleep(); // Abstract method
+}
+    
+class Dog implements Animal {
+    public void eat() {
+        System.out.println("Dog is eating");
+    }
+    public void sleep() {
+        System.out.println("Dog is sleeping");
+    }
+}    
+</code></pre><br>In this example, <b>' Animal '</b> is an interface with two abstract methods <b>' eat() '</b> and <b>' sleep() '</b>. The <b>' Dog  '</b>class implements the <b>' Animal '</b> interface and provides concrete implementations for both methods.
+                </li><br>
+
+                    <li><h3>Abstract Methods : </h3>
+                      <ul>
+                        <li>Abstract methods are methods declared without a body, i.e., they do not contain any implementation.</li><br>
+                        <li>Abstract methods are meant to be overridden by subclasses, providing specific implementations.</li><br>
+                        <li>Abstract methods are declared in abstract classes or interfaces.</li><br>
+                        <li>Abstract methods are marked with the <b>' abstract '</b> keyword and end with a semicolon instead of a method body.</li></ul><br>
+                    </li>
+                    <li><h3>Default Methods (in Interfaces) : </h3><ul><li>Default methods were introduced in Java 8 to provide backward compatibility for interfaces.</li><br>
+                        <li>Default methods are methods in interfaces that have a default implementation.</li><br>
+                        <li>Default methods can be overridden by implementing classes, but they are not required to do so.</li><br>
+                        <li>Default methods are declared using the <b>' default '</b> keyword.</li><br>
+                    </ul></li>
+
+                    <li><h3>Static Methods (in Interfaces) : </h3>
+                      <ul>
+                        <li>Static methods in interfaces are methods that can be called without creating an instance of the interface.</li><br>
+                        <li>Static methods are often utility methods or helper methods that are relevant to the interface but do not depend on the state of any implementing class.</li><br>
+                        <li>Static methods are declared using the <b>' static '</b> keyword.</li></ul><br>
+                    </li>
+                    <li><h3>Abstraction vs. Encapsulation : </h3>
+                      <ul>
+                        <li>While abstraction focuses on hiding implementation details and showing only essential features of an object, encapsulation is about bundling the data (attributes) and methods (functions) that operate on the data into a single unit (class) and controlling access to that unit.</li><br>
+                        <li>Encapsulation is achieved through access modifiers like <b>' private'</b>,<b>' protected '</b>, and <b>' public '</b>, whereas abstraction is achieved through abstract classes and interfaces.</li></ul><br>
+                    </li>
+                    <li><h3>Example : </h3>
+<pre class="line-numbers"><code class="language-js">
+abstract class Animal {
+    abstract void makeSound();
+}
+    
+class Dog extends Animal {
+    void makeSound() {
+        System.out.println("Bark");
+    }
+ }
+    
+class Cat extends Animal {
+    void makeSound() {
+        System.out.println("Meow");
+    }
+}
+    
+public class Main {
+    public static void main(String[] args) {
+        Animal dog = new Dog();
+        Animal cat = new Cat();
+        dog.makeSound(); // Output: Bark
+        cat.makeSound(); // Output: Meow
+    }
+}    
+</code></pre><br>In this example, <b>' Animal '</b> is an abstract class with an abstract method <b>' makeSound() '</b>. <b>' Dog '</b> and <b>' Cat '</b> are concrete subclasses of <b>' Animal '</b> that provide specific implementations for the <b>' makeSound() '</b> method. The <b>' makeSound() '</b> method demonstrates polymorphism by creating instances of <b>' Dog '</b> and <b>' Cat '</b> and calling the <b>' makeSound() '</b> method on them. <br>
+                    </li><br>
+                    <p>Abstraction is a crucial concept in Java programming, facilitating modularity, code reusability, and polymorphism. It allows developers to design flexible and extensible systems by focusing on defining interfaces and behaviors rather than specific implementations.</p>
+
+
+            </ol>
+    
+          
+        </main>
+        <div class="footer">
+          <div class="brand footer-div">
+            <h2>&lt;\&gt; CodeBug</h2>
+            <p>Designed by Santoshi, Manjot, Prince, Priya, Monika with &hearts;</p>
+            <p>Students of Bachelor of Computer Application</p>
+            
+          </div>
+
+          <div class="our-srvcs footer-div">
+            <h2>Our Services</h2>
+            <ul>
+              <li>Web Design</li>
+              <li>Web Development</li>
+              <li>App Development</li>
+              <li>Website Maintanance</li>
+            </ul>
+          </div>
+
+          <div class="contact footer-div">
+            <h2>Contact Info</h2>
+            <ul>
+              <li><span class="material-symbols-outlined">call</span> 7696838961</li>
+              <li><span class="material-symbols-outlined">mail</span> prince1432810@gmail.com</li>
+              <li><i class="fa-brands fa-twitter"></i>@8001Prince4262</li>
+              <li><span class="material-symbols-outlined">location_on</span> Balachaur, 144526, SBS Nagar</li>
+            </ul>
+          </div>
+        </div>
+
+          </div>
+    </div>
+    <script src="../myjs.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

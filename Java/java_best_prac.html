@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../bug1.png"/>
+    <title>CodeBug - Making Bug Fixes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <nav class="navbar bg-dark sticky-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+          <label for="snav"><span class="material-symbols-outlined mybtn btn" >sort</span></label>
+          <a class="navbar-brand" href="#"><b>&lt;&Backslash;&gt; CodeBug</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../docs.html">Docs</a>
+              </li>
+              <li class="nav-item">
+                <a href="../about_us.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="../contact_us.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Compiler
+                </a>
+                <ul class="dropdown-menu  dropdown-menu-end animate slideIn">
+                  <li><a class="dropdown-item" href="https://www.programiz.com/c-programming/online-compiler/">C</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/cpp-programming/online-compiler/">C++</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/java-programming/online-compiler/">Java</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/html/online-compiler/">HTML, CSS, JS</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/python-programming/online-compiler/">Python</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/csharp-programming/online-compiler/">C#</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/php/online-compiler/">PHP</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <label class="theme" for="changeColorCheckbox">
+                  <input type="checkbox" class="hide" id="changeColorCheckbox">
+                  <span class="material-symbols-outlined nav-link">light_mode</span>
+                </label>
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div class="navbar2">
+      <div class="nav-container">
+        <a href="../HTML/index.html" class="html-nav">HTML</a>
+        <a href="../CSS/index.html" class="css-nav">CSS</a>
+        <a class="js-nav disable" >JavaScript</a>
+        <a href="../Java/index.html" class="java-nav" id="full">Java</a>
+        <a class="c-nav disable" >C</a>
+        <a class="cpp-nav disable" >C++</a>
+      </div>
+    </div>
+    <input type="checkbox" id="snav">
+
+    <div class="main">
+      <section class="overlay"></section>
+      <aside>
+        <div class="sidebar" id="sidebar">
+          <h4>Introduction to Java</h4>
+          <a href="index.html">History and Evolution</a>
+          <a href="java_jbm.html">Java Virtual Machine(JVM)</a>
+          <a href="java_jdk.html">Java Development Kit(JDK)</a>
+   
+          <h4>Basic Concepts</h4>
+          <a href="java_var_datatype.html">Variables and Data Types</a>
+          <a href="java_operators.html">Operators</a>
+          <a href="java_controlflow.html">Control Flow</a>
+          <!-- <a href="#">Loops</a><br> -->
+
+          <h4>Object-Oriented Programming(OOP)</h4>       
+          <a href="java_class_obj.html">Classes and Objects</a>
+          <a href="java_inheritance.html">Inheritance</a>
+          <a href="java_poly.html">Polymorphism</a>
+          <a href="java_encap.html">Encapsualtion</a>
+          <a href="java_abs.html">Abstraction</a>
+
+          <h4>Exception Handling</h4>
+          <a href="java_try_catch.html">try,catch,finaly</a>
+          <a href="java_custom_exp.html">Custom Exceptions</a>
+
+          <h4>Collections Framework</h4> 
+          <a href="list_set.html">Lists,Sets,Maps</a>
+          <a href="arraylist.html">ArrayList,LinkedList</a>
+          <a href="java_hashset.html">HashSet,TreeSet</a>
+          <a href="hashmap.html">HashMap,TreeMap</a>
+  
+          <h4>File Handling</h4>
+          <a href="file_read_write.html">Reading and Writing Files</a>
+          <a href="fileio.html">File I/O Streams</a>
+
+          <h4>Multithreading</h4>
+          <a href="java_thread.html">Thread</a>
+          <a href="java_syn.html">Synchronization</a>
+          <a href="java_thread_pool.html">Thread Pools</a>
+
+          <h4>Networking in Java</h4>
+          <a href="java_socket_prog.html">Socket Programming</a>
+          <a href="java_url.html">URL and HttpURLConnection</a>
+   
+          <h4>Database Connectivity</h4>
+          <a href="java_jdbc.html">JDBC(Java Database Connectivity)</a>
+
+          <h4>GUI Development</h4>
+          <a href="java_awt.html">AWT(Abstract Window Toolkit)</a>
+          <a href="java_swing.html">Swing</a>
+          <a href="javaFX.html">JavaFX</a>
+
+          <h4>Java EE(Enterprise Edition)</h4>
+          <a href="java_servlet.html">Servlets</a>
+          <a href="jsp.html">JSP(JavaServer Pages)</a>
+
+          <h4>Frameworks</h4>
+          <a href="java_spring_frame.html">Spring Framework</a>
+          <a href="java_hibernate.html">Hibernate</a>
+
+          <h4>Java Security</h4>
+          <a href="java_crypto.html">Cryptography</a>
+          <a href="java_secure.html">Secure Coding Practices</a>
+          
+          <h4>Others</h4>
+          <a href="java_lambda.html">Lambda Expressions and Functional Interfaces</a>
+          <a href="unit_test.html">Unit Testing with JUnit</a>
+          <a href="annoa.html">Annotations</a>
+          <a href="java_restful_web.html">Restful Web Services</a>
+          <a href="javaFX_for_desktop.html">JavaFX for Desktop Applications</a>
+          <a href="java_maven.html">Maven and Gradle for Build Automation</a>
+          <a href="java_best_prac.html" class="cur-page">Java Best Practices and Design Patterns</a>     
+          <br><br>
+        </div>
+      </aside>
+    
+          <div class="main-content">
+           <main>
+            <div class="page-nav">
+              <a href="java_secure.html" class="prev btn btn-outline-primary">&lt;Prev</a>
+            </div>
+           
+            <h1>Java Best Practices and Design Patterns</h1><br>
+
+            <h2>Best Practices:</h2><br>
+            <ol>
+                <li><h3>Follow Java Naming Conventions : </h3><ul><br>
+                    <li><h5 class="i">Classes :</h5> Use nouns or noun phrases, starting with an uppercase letter (e.g., User, Car).</li><br>
+                    <li><h5 class="i">Methods :</h5> Use verbs or verb phrases, starting with a lowercase letter (e.g., getUser, driveCar).</li><br>
+                    <li><h5 class="i">Variables :</h5> Use meaningful names, starting with a lowercase letter (e.g., userName, carModel).</li><br>
+                    <li><h5 class="i">Packages :</h5> Use a reverse domain name format (e.g., com.example.myapp).</li>
+                </ul></li><br>
+
+                <li><h3>Use Interfaces and Abstract Classes : </h3><ul><br>
+                    <li><h5>Interfaces : </h5>Define contracts for classes to implement. Use when multiple implementations are possible (e.g., List, Runnable).</li><br>
+                    <li><h5>Abstract Classes : </h5>Provide common functionality to subclasses. Use when sharing code among closely related classes (e.g., AbstractList, AbstractMap).</li>
+                </ul></li><br>
+
+                <li><h3>Use Enums Instead of Constants : </h3><ul><br>
+                    <li><h5>Enums : </h5>Define a fixed set of constants with a meaningful name (e.g., DayOfWeek, Color).</li>
+                </ul></li><br>
+
+                <li><h3>Avoid Using Magic Numbers : </h3><ul><br>
+                    <li><h5>Magic Numbers : </h5>Replace hardcoded numeric values with constants or enums to improve code readability and maintainability.</li>
+                </ul></li><br>
+
+                <li><h3>Use Immutable Objects : </h3><ul><br>
+                    <li><h5>Immutable Objects : </h5>Objects whose state cannot be modified after creation. Use final keyword for fields and avoid setter methods.</li>
+                </ul></li><br>
+
+                <li><h3>Avoid Using Deprecated APIs : </h3><ul><br>
+                    <li><h5>Deprecated APIs : </h5>APIs that are no longer recommended for use. Check the Java documentation for recommended replacements.</li>
+                </ul></li><br>
+
+                <li><h3>Use Try-With-Resources : </h3><ul><br>
+                    <li><h5>Try-With-Resources : </h5>Automatically closes resources (e.g., streams, files, sockets) after use. Introduced in Java 7.</li>
+                </ul></li><br>
+
+                <li><h3>Use StringBuilder for String Manipulation : </h3><ul><br>
+                    <li><h5>StringBuilder : </h5>Use when performing extensive string manipulation to avoid creating unnecessary string objects.</li>
+                </ul></li><br>
+
+                <li><h3>Handle Exceptions Properly : </h3><ul>
+                    <li>Catch exceptions at the appropriate level of abstraction. Use try-catch blocks to handle exceptions gracefully.</li>
+                </ul></li><br>
+
+                <li><h3>Use Annotations Wisely : </h3><ul><br>
+                    <li><h5>Annotations : </h5>Use to provide metadata about classes, methods, and fields. Examples include <b>' @Override '</b>, <b>' @Deprecated '</b>, and <b>' @SuppressWarnings '</b>.</li>
+                </ul></li><br><br>
+                
+            </ol>
+
+            <h2>Design Patterns:</h2><br>
+            <ol>
+                <li><h3>Singleton Pattern : </h3><ul>
+                    <li>Ensure a class has only one instance and provides a global point of access to it. Use private constructor and a public static method to get the instance.</li>
+                </ul></li><br>
+
+                <li><h3>Factory Pattern : </h3><ul>
+                    <li>Define an interface or abstract class for creating objects. Subclasses decide which class to instantiate based on certain conditions.</li>
+                </ul></li><br>
+
+                <li><h3>Builder Pattern : </h3><ul>
+                    <li>Separate the construction of a complex object from its representation. Use a builder class to construct the object step by step.</li>
+                </ul></li><br>
+
+                <li><h3>Observer Pattern : </h3><ul>
+                    <li>Define a one-to-many dependency between objects. When one object changes state, all its dependents are notified and updated automatically.</li>
+                </ul></li><br>
+
+                <li><h3>Strategy Pattern : </h3><ul>
+                    <li>Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.</li>
+                </ul></li><br>
+
+                <li><h3>Decorator Pattern : </h3><ul>
+                    <li>Attach additional responsibilities to an object dynamically. Provide a flexible alternative to subclassing for extending functionality.</li>
+                </ul></li><br>
+
+                <li><h3>Template Method Pattern : </h3><ul>
+                    <li>Define the skeleton of an algorithm in a method, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing its structure.</li>
+                </ul></li><br>
+
+                <li><h3>Facade Pattern : </h3><ul>
+                    <li>Provide a unified interface to a set of interfaces in a subsystem, making it easier to use. Hide the complexities of the subsystem from the client.</li>
+                </ul></li><br>
+
+                <li><h3>Composite Pattern : </h3><ul>
+                    <li>Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.</li>
+                </ul></li><br>
+
+                <li><h3>Iterator Pattern : </h3><ul>
+                    <li>Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation. Allows iterating over collections without knowing their internal structure</li>
+                </ul></li><br>
+
+
+            </ol>
+
+            <p>Applying these best practices and design patterns can help you write more maintainable, scalable, and efficient Java code.</p>
+          
+          </main>
+          <div class="footer">
+            <div class="brand footer-div">
+              <h2>&lt;\&gt; CodeBug</h2>
+              <p>Designed by Santoshi, Manjot, Prince, Priya, Monika with &hearts;</p>
+              <p>Students of Bachelor of Computer Application</p>
+              
+            </div>
+  
+            <div class="our-srvcs footer-div">
+              <h2>Our Services</h2>
+              <ul>
+                <li>Web Design</li>
+                <li>Web Development</li>
+                <li>App Development</li>
+                <li>Website Maintanance</li>
+              </ul>
+            </div>
+  
+            <div class="contact footer-div">
+              <h2>Contact Info</h2>
+              <ul>
+                <li><span class="material-symbols-outlined">call</span> 7696838961</li>
+                <li><span class="material-symbols-outlined">mail</span> prince1432810@gmail.com</li>
+                <li><i class="fa-brands fa-twitter"></i>@8001Prince4262</li>
+                <li><span class="material-symbols-outlined">location_on</span> Balachaur, 144526, SBS Nagar</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="../myjs.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

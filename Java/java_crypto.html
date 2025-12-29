@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../bug1.png"/>
+    <title>CodeBug - Making Bug Fixes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <nav class="navbar bg-dark sticky-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+          <label for="snav"><span class="material-symbols-outlined mybtn btn" >sort</span></label>
+          <a class="navbar-brand" href="#"><b>&lt;&Backslash;&gt; CodeBug</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../docs.html">Docs</a>
+              </li>
+              <li class="nav-item">
+                <a href="../about_us.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="../contact_us.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Compiler
+                </a>
+                <ul class="dropdown-menu  dropdown-menu-end animate slideIn">
+                  <li><a class="dropdown-item" href="https://www.programiz.com/c-programming/online-compiler/">C</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/cpp-programming/online-compiler/">C++</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/java-programming/online-compiler/">Java</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/html/online-compiler/">HTML, CSS, JS</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/python-programming/online-compiler/">Python</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/csharp-programming/online-compiler/">C#</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/php/online-compiler/">PHP</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <label class="theme" for="changeColorCheckbox">
+                  <input type="checkbox" class="hide" id="changeColorCheckbox">
+                  <span class="material-symbols-outlined nav-link">light_mode</span>
+                </label>
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div class="navbar2">
+      <div class="nav-container">
+        <a href="../HTML/index.html" class="html-nav">HTML</a>
+        <a href="../CSS/index.html" class="css-nav">CSS</a>
+        <a class="js-nav disable" >JavaScript</a>
+        <a href="../Java/index.html" class="java-nav" id="full">Java</a>
+        <a class="c-nav disable" >C</a>
+        <a class="cpp-nav disable" >C++</a>
+      </div>
+    </div>
+    <input type="checkbox" id="snav">
+
+    <div class="main">
+      <section class="overlay"></section>
+      <aside>
+        <div class="sidebar" id="sidebar">
+          <h4>Introduction to Java</h4>
+          <a href="index.html">History and Evolution</a>
+          <a href="java_jbm.html">Java Virtual Machine(JVM)</a>
+          <a href="java_jdk.html">Java Development Kit(JDK)</a>
+   
+          <h4>Basic Concepts</h4>
+          <a href="java_var_datatype.html">Variables and Data Types</a>
+          <a href="java_operators.html">Operators</a>
+          <a href="java_controlflow.html">Control Flow</a>
+          <!-- <a href="#">Loops</a><br> -->
+
+          <h4>Object-Oriented Programming(OOP)</h4>       
+          <a href="java_class_obj.html">Classes and Objects</a>
+          <a href="java_inheritance.html">Inheritance</a>
+          <a href="java_poly.html">Polymorphism</a>
+          <a href="java_encap.html">Encapsualtion</a>
+          <a href="java_abs.html">Abstraction</a>
+
+          <h4>Exception Handling</h4>
+          <a href="java_try_catch.html">try,catch,finaly</a>
+          <a href="java_custom_exp.html">Custom Exceptions</a>
+
+          <h4>Collections Framework</h4> 
+          <a href="list_set.html">Lists,Sets,Maps</a>
+          <a href="arraylist.html">ArrayList,LinkedList</a>
+          <a href="java_hashset.html">HashSet,TreeSet</a>
+          <a href="hashmap.html">HashMap,TreeMap</a>
+  
+          <h4>File Handling</h4>
+          <a href="file_read_write.html">Reading and Writing Files</a>
+          <a href="fileio.html">File I/O Streams</a>
+
+          <h4>Multithreading</h4>
+          <a href="java_thread.html">Thread</a>
+          <a href="java_syn.html">Synchronization</a>
+          <a href="java_thread_pool.html">Thread Pools</a>
+
+          <h4>Networking in Java</h4>
+          <a href="java_socket_prog.html">Socket Programming</a>
+          <a href="java_url.html">URL and HttpURLConnection</a>
+   
+          <h4>Database Connectivity</h4>
+          <a href="java_jdbc.html">JDBC(Java Database Connectivity)</a>
+
+          <h4>GUI Development</h4>
+          <a href="java_awt.html">AWT(Abstract Window Toolkit)</a>
+          <a href="java_swing.html">Swing</a>
+          <a href="javaFX.html">JavaFX</a>
+
+          <h4>Java EE(Enterprise Edition)</h4>
+          <a href="java_servlet.html">Servlets</a>
+          <a href="jsp.html">JSP(JavaServer Pages)</a>
+
+          <h4>Frameworks</h4>
+          <a href="java_spring_frame.html">Spring Framework</a>
+          <a href="java_hibernate.html">Hibernate</a>
+
+          <h4>Java Security</h4>
+          <a href="java_crypto.html" class="cur-page">Cryptography</a>
+          <a href="java_secure.html">Secure Coding Practices</a>
+          
+          <h4>Others</h4>
+          <a href="java_lambda.html">Lambda Expressions and Functional Interfaces</a>
+          <a href="unit_test.html">Unit Testing with JUnit</a>
+          <a href="annoa.html">Annotations</a>
+          <a href="java_restful_web.html">Restful Web Services</a>
+          <a href="javaFX_for_desktop.html">JavaFX for Desktop Applications</a>
+          <a href="java_maven.html">Maven and Gradle for Build Automation</a>
+          <a href="java_best_prac.html">Java Best Practices and Design Patterns</a>     
+          <br><br>
+        </div>
+      </aside>
+          <div class="main-content">
+           <main>
+            <div class="page-nav">
+              <a href="java_maven.html" class="prev btn btn-outline-primary">&lt; Prev</a>
+              <a href="java_secure.html" class="next btn btn-outline-primary" >Next &gt;</a>
+            </div>
+           
+
+            <h1>Cryptography In Java</h1><br>
+            <p>Cryptography in Java involves using cryptographic algorithms to secure data and communications. Java provides a comprehensive set of classes and interfaces in the java.security and javax.crypto packages to support various cryptographic operations. Here's a detailed overview:</p>
+            <br><ol>
+                <li><h3>Message Digests (Hashing) : </h3>Java provides the MessageDigest class to calculate hash values for data using algorithms like MD5, SHA-1, SHA-256, etc. Hashing is commonly used to verify data integrity. <br>
+                Example:
+<pre class="line-numbers"><code class="language-css">MessageDigest md = MessageDigest.getInstance("SHA-256");
+    byte[] hash = md.digest(data);
+</code></pre><br>
+            </li>
+
+            <li><h5>Digital Signatures : </h5>Java supports digital signatures for ensuring data integrity and authenticity. The Signature class is used for creating and verifying digital signatures. <br>
+            Example:
+<pre class="line-numbers"><code class="language-css">Signature sig = Signature.getInstance("SHA256withRSA");
+    sig.initSign(privateKey);
+    sig.update(data);
+    byte[] signature = sig.sign();
+</code></pre><br>
+        </li>
+
+            <li><h5>Encryption and Decryption : </h5>Java supports symmetric and asymmetric encryption. For symmetric encryption, the Cipher class is used, while for asymmetric encryption, the Cipher class works with KeyPair and PublicKey/PrivateKey objects. <br>
+            Example (symmetric encryption):
+<pre class="line-numbers"><code class="language-css">Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
+    cipher.init(Cipher.ENCRYPT_MODE, secretKey);
+    byte[] encryptedData = cipher.doFinal(data);
+</code></pre><br>
+            
+            Example (asymmetric encryption):
+<pre class="line-numbers"><code class="language-css">Cipher cipher = Cipher.getInstance("RSA/ECB/PKCS1Padding");
+    cipher.init(Cipher.ENCRYPT_MODE, publicKey);
+    byte[] encryptedData = cipher.doFinal(data);
+    </code></pre><br>        
+        </li>
+
+            <li><h5>Key Generation and Management : </h5>Java provides classes like KeyGenerator and KeyPairGenerator for generating symmetric and asymmetric keys respectively. Keys can be stored securely using the KeyStore class. <br>
+            Example (symmetric key generation):
+ <pre class="line-numbers"><code class="language-css">KeyGenerator keyGen = KeyGenerator.getInstance("AES");
+    keyGen.init(256);
+    SecretKey secretKey = keyGen.generateKey();
+</code></pre><br>       
+        </li>
+
+            <li><h5>Secure Random Numbers : </h5>Java provides the SecureRandom class for generating cryptographically secure random numbers, which are essential for cryptographic operations. <br>
+            Example:
+<pre class="line-numbers"><code class="language-css">SecureRandom random = new SecureRandom();
+    byte[] iv = new byte[16];
+    random.nextBytes(iv);
+</code></pre><br>        
+        </li>
+
+            <li><h5>Key Exchange : </h5>Java supports key exchange protocols like Diffie-Hellman for securely exchanging keys between parties. <br> 
+            Example:
+<pre class="line-numbers"><code class="language-css">KeyPairGenerator keyPairGen = KeyPairGenerator.getInstance("DH");
+    KeyPair keyPair = keyPairGen.generateKeyPair();
+</code></pre><br>        
+        </li>
+
+        <li><h5>Certificates and SSL/TLS : </h5>Java supports SSL/TLS protocols for secure communication over the network. It uses the KeyManagerFactory and TrustManagerFactory classes for managing certificates.  <br> 
+        Example:
+<pre class="line-numbers"><code class="language-css">KeyManagerFactory kmf = KeyManagerFactory.getInstance("SunX509");
+    kmf.init(keyStore, password);
+</code></pre><br>
+         </li>
+
+         <li><h5>Secure Communication : </h5>Java provides classes like SSLSocket and SSLServerSocket for creating secure client-server communication channels using SSL/TLS. <br>
+            Example (client-side):
+ <pre class="line-numbers"><code class="language-css">SSLSocketFactory factory = (SSLSocketFactory) SSLSocketFactory.getDefault();
+    SSLSocket socket = (SSLSocket) factory.createSocket("hostname", port);
+</code></pre><br>       
+            
+            Example (server-side):
+<pre class="line-numbers"><code class="language-css">SSLServerSocketFactory factory = (SSLServerSocketFactory) SSLServerSocketFactory.getDefault();
+    SSLServerSocket serverSocket = (SSLServerSocket) factory.createServerSocket(port);
+</code></pre><br>
+        </li>
+
+            </ol>
+            <p>In summary, Java provides a robust set of APIs for implementing various cryptographic operations, ensuring data confidentiality, integrity, and authenticity in Java applications.</p>
+
+          </main>
+          <div class="footer">
+            <div class="brand footer-div">
+              <h2>&lt;\&gt; CodeBug</h2>
+              <p>Designed by Santoshi, Manjot, Prince, Priya, Monika with &hearts;</p>
+              <p>Students of Bachelor of Computer Application</p>
+              
+            </div>
+  
+            <div class="our-srvcs footer-div">
+              <h2>Our Services</h2>
+              <ul>
+                <li>Web Design</li>
+                <li>Web Development</li>
+                <li>App Development</li>
+                <li>Website Maintanance</li>
+              </ul>
+            </div>
+  
+            <div class="contact footer-div">
+              <h2>Contact Info</h2>
+              <ul>
+                <li><span class="material-symbols-outlined">call</span> 7696838961</li>
+                <li><span class="material-symbols-outlined">mail</span> prince1432810@gmail.com</li>
+                <li><i class="fa-brands fa-twitter"></i>@8001Prince4262</li>
+                <li><span class="material-symbols-outlined">location_on</span> Balachaur, 144526, SBS Nagar</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+      <script src="../myjs.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../bug1.png"/>
+    <title>CodeBug - Making Bug Fixes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <nav class="navbar bg-dark sticky-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+          <label for="snav"><span class="material-symbols-outlined mybtn btn" >sort</span></label>
+          <a class="navbar-brand" href="#"><b>&lt;&Backslash;&gt; CodeBug</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../docs.html">Docs</a>
+              </li>
+              <li class="nav-item">
+                <a href="../about_us.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="../contact_us.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Compiler
+                </a>
+                <ul class="dropdown-menu  dropdown-menu-end animate slideIn">
+                  <li><a class="dropdown-item" href="https://www.programiz.com/c-programming/online-compiler/">C</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/cpp-programming/online-compiler/">C++</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/java-programming/online-compiler/">Java</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/html/online-compiler/">HTML, CSS, JS</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/python-programming/online-compiler/">Python</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/csharp-programming/online-compiler/">C#</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/php/online-compiler/">PHP</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <label class="theme" for="changeColorCheckbox">
+                  <input type="checkbox" class="hide" id="changeColorCheckbox">
+                  <span class="material-symbols-outlined nav-link">light_mode</span>
+                </label>
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div class="navbar2">
+      <div class="nav-container">
+        <a href="../HTML/index.html" class="html-nav">HTML</a>
+        <a href="../CSS/index.html" class="css-nav">CSS</a>
+        <a class="js-nav disable" >JavaScript</a>
+        <a href="../Java/index.html" class="java-nav" id="full">Java</a>
+        <a class="c-nav disable" >C</a>
+        <a class="cpp-nav disable" >C++</a>
+      </div>
+    </div>
+    <input type="checkbox" id="snav">
+
+    <div class="main">
+      <section class="overlay"></section>
+      <aside>
+        <div class="sidebar" id="sidebar">
+          <h4>Introduction to Java</h4>
+          <a href="index.html">History and Evolution</a>
+          <a href="java_jbm.html">Java Virtual Machine(JVM)</a>
+          <a href="java_jdk.html">Java Development Kit(JDK)</a>
+   
+          <h4>Basic Concepts</h4>
+          <a href="java_var_datatype.html">Variables and Data Types</a>
+          <a href="java_operators.html">Operators</a>
+          <a href="java_controlflow.html">Control Flow</a>
+          <!-- <a href="#">Loops</a><br> -->
+
+          <h4>Object-Oriented Programming(OOP)</h4>       
+          <a href="java_class_obj.html">Classes and Objects</a>
+          <a href="java_inheritance.html" class="cur-page">Inheritance</a>
+          <a href="java_poly.html">Polymorphism</a>
+          <a href="java_encap.html">Encapsualtion</a>
+          <a href="java_abs.html">Abstraction</a>
+
+          <h4>Exception Handling</h4>
+          <a href="java_try_catch.html">try,catch,finaly</a>
+          <a href="java_custom_exp.html">Custom Exceptions</a>
+
+          <h4>Collections Framework</h4> 
+          <a href="list_set.html">Lists,Sets,Maps</a>
+          <a href="arraylist.html">ArrayList,LinkedList</a>
+          <a href="java_hashset.html">HashSet,TreeSet</a>
+          <a href="hashmap.html">HashMap,TreeMap</a>
+  
+          <h4>File Handling</h4>
+          <a href="file_read_write.html">Reading and Writing Files</a>
+          <a href="fileio.html">File I/O Streams</a>
+
+          <h4>Multithreading</h4>
+          <a href="java_thread.html">Thread</a>
+          <a href="java_syn.html">Synchronization</a>
+          <a href="java_thread_pool.html">Thread Pools</a>
+
+          <h4>Networking in Java</h4>
+          <a href="java_socket_prog.html">Socket Programming</a>
+          <a href="java_url.html">URL and HttpURLConnection</a>
+   
+          <h4>Database Connectivity</h4>
+          <a href="java_jdbc.html">JDBC(Java Database Connectivity)</a>
+
+          <h4>GUI Development</h4>
+          <a href="java_awt.html">AWT(Abstract Window Toolkit)</a>
+          <a href="java_swing.html">Swing</a>
+          <a href="javaFX.html">JavaFX</a>
+
+          <h4>Java EE(Enterprise Edition)</h4>
+          <a href="java_servlet.html">Servlets</a>
+          <a href="jsp.html">JSP(JavaServer Pages)</a>
+
+          <h4>Frameworks</h4>
+          <a href="java_spring_frame.html">Spring Framework</a>
+          <a href="java_hibernate.html">Hibernate</a>
+
+          <h4>Java Security</h4>
+          <a href="java_crypto.html">Cryptography</a>
+          <a href="java_secure.html">Secure Coding Practices</a>
+          
+          <h4>Others</h4>
+          <a href="java_lambda.html">Lambda Expressions and Functional Interfaces</a>
+          <a href="unit_test.html">Unit Testing with JUnit</a>
+          <a href="annoa.html">Annotations</a>
+          <a href="java_restful_web.html">Restful Web Services</a>
+          <a href="javaFX_for_desktop.html">JavaFX for Desktop Applications</a>
+          <a href="java_maven.html">Maven and Gradle for Build Automation</a>
+          <a href="java_best_prac.html">Java Best Practices and Design Patterns</a>     
+          <br><br>
+        </div>
+      </aside>
+    
+          <div class="main-content">
+            
+          <main>
+            <div class="page-nav">
+              <a href="java_class_obj.html" class="prev btn btn-outline-primary">&lt; Prev</a>
+              <a href="java_poly.html" class="next btn btn-outline-primary">Next &gt;</a>  
+            </div>
+          
+            <h1>Java Inheritance</h1><br><p>In Java, inheritance is a mechanism by which a class (known as a subclass or child class) can acquire properties and behaviors (methods and fields) from another class (known as a superclass or parent class). This enables code reuse, promotes modularity, and facilitates the creation of hierarchical relationships among classes.</p>
+            <p>Here is detailed information of Inheritance : </p>
+            <h3>Defination : </h3>
+            <p><b>Inheritance</b> in Java is the process by which a class inherits features (fields and methods) from another class, allowing the subclass to reuse and extend the functionality defined in the superclass. The subclass inherits the properties and behaviors of the superclass and can add new features or modify existing ones as needed.</p>
+            <h3>Key Points</h3>
+            <ol>
+                <li><h5 class="i">Superclass and Subclass Relationship : </h5>Inheritance establishes a hierarchical relationship between classes, where the subclass extends the superclass. The superclass provides a common blueprint, and subclasses refine or specialize the behavior of the superclass.</li><br>
+                <li><h5 class="i">Syntax : </h5> In Java, inheritance is implemented using the extends keyword. The subclass class declaration specifies the superclass it inherits from.</li>
+<pre class="line-numbers"><code class="language-js">
+class Subclass extends Superclass {
+    // subclass members
+}    
+</code></pre><br>
+                <li><h5>Access to Superclass Members : </h5>Subclasses inherit the public and protected members of the superclass. Private members are not directly accessible in subclasses. Package-private members are accessible within the same package.</li><br>
+                <li><h5 class="i">Code Reusability : </h5>Inheritance promotes code reuse by allowing subclasses to inherit and reuse the behavior and attributes defined in the superclass. This reduces redundancy and leads to more maintainable and scalable code.</li><br>
+                <li><h5 class="i">Method Overriding : </h5>Subclasses can override methods inherited from the superclass to provide specialized implementations. This allows subclasses to tailor the behavior of inherited methods to suit their specific requirements.</li><br>
+                <li><h5 class="i">Inheritance Hierarchy : </h5> In Java, classes can form a hierarchy of inheritance, where subclasses can further serve as superclasses for other subclasses. This creates a tree-like structure of classes, with each level of the hierarchy inheriting features from its parent classes.</li><br>
+                <li><h5 class="i">Single Inheritance : </h5>Java supports single inheritance, meaning a class can inherit from only one superclass. However, it can implement multiple interfaces, enabling multiple inheritance of behavior.</li><br>
+                <li><h5 class="i">Polymorphism : </h5>Inheritance facilitates polymorphism, where objects of the subclass can be treated as objects of the superclass, enabling dynamic method dispatch and runtime polymorphic behavior.</li><br>
+            </ol><br>
+            <h1>Different types of Inheritance : </h1><br>
+            <img src="Java-inheritance.jpg" style="background-size: cover; width: 100%; margin-left: auto; margin-right: auto; display: block;">
+            <br><br>
+            <ol>
+                <li><h3>Single Inheritance : </h3>In single inheritance, a subclass inherits from only one superclass. This is the simplest form of inheritance.
+<pre class="line-numbers"><code class="language-js">
+class Superclass {
+    // superclass members
+}
+    
+class Subclass extends Superclass {
+    // subclass members
+}    
+</code></pre><br>
+            <h5 class="i">characteristics :</h5>
+            <ul><li>Each subclass has exactly one direct superclass.</li><br>
+            <li>Java supports single inheritance for classes, meaning a class can extend only one other class.</li></ul> <br>
+            <h5 class="i">Example Use Case : </h5><ul><li>Modeling relationships where a subclass represents a more specific type of the superclass. For instance, a <b>' Car '</b> class (subclass) might inherit from a <b>' Vehicle '</b> class (superclass).</li></ul>
+        </li><br>   
+        
+        <li><h3>Multilevel Inheritance :</h3 >In multilevel inheritance, a subclass inherits from another subclass, creating a chain of inheritance. 
+<pre class="line-numbers"> <code class="language-js">
+class Grandparent {
+    // grandparent members
+}
+    
+class Parent extends Grandparent {
+    // parent members
+}
+    
+class Child extends Parent {
+    // child members
+}    
+</code></pre><br>
+            <h5 class="i">characteristics : </h5>
+            <ul><li>Classes are organized in a hierarchical order, with each subclass inheriting from its immediate parent class.</li><br>
+         <li> The subclass at the end of the chain inherits properties and behaviors from all its ancestor classes.</li></ul><br>
+         
+         <h5 class="i">Example Use Case : </h5><ul><li>Representing relationships where each subsequent subclass adds additional features or behavior to the preceding ones</li></ul>
+        </li><br>
+
+        <li><h3>Hierarchical Inheritance : </h3>In hierarchical inheritance, multiple subclasses inherit from the same superclass. 
+<pre class="line-numbers"><code class="language-js">
+class Superclass {
+    // superclass members
+}
+    
+class Subclass1 extends Superclass {
+    // subclass1 members
+}
+    
+class Subclass2 extends Superclass {
+    // subclass2 members
+}
+</code></pre><br>
+            <h5 class="i">characteristics : </h5><ul><li>Multiple subclasses inherit from a single superclass.</li><br>
+             <li>Each subclass shares common features defined in the superclass but may have its own unique characteristics.</li></ul><br>
+             <h5 class="i">Example Use Case : </h5><ul><li>Modeling scenarios where different subclasses share common properties or behavior but also have their distinct features. For example, a <b>' Shape '</b> superclass with subclasses like <b>' Rectangle '</b>, <b>' Circle '</b>, and <b>' Triangle '</b>.</li></ul>
+        </li><br>
+
+        <li><h3>Multiple Inheritance (Through Interfaces) : </h3>Java doesn't support multiple inheritance for classes, where a class inherits from more than one superclass. However, it allows multiple inheritance of behavior through interfaces. 
+<pre class="line-numbers"><code class="language-js">
+interface Interface1 {
+    // interface1 members
+}
+    
+interface Interface2 {
+    // interface2 members
+}
+    
+class MyClass implements Interface1, Interface2 {
+    // class members
+}    
+</code></pre><br>
+        <h5 class="i">characteristics : </h5>
+        <ul>
+          <li>A class can implement multiple interfaces, effectively inheriting behavior from all of them.</li><br>
+        <li>This allows a class to exhibit the characteristics of multiple types without requiring multiple inheritance of classes.</li>
+      </ul><br>
+
+        <h5 class="i">Example Use Case : </h5>
+        <ul>
+          <li>Enabling a class to provide various functionalities defined in different interfaces, promoting code modularity and flexibility.</li>
+        </ul>
+        
+      </li><br>
+
+      </main>
+      <div class="footer">
+        <div class="brand footer-div">
+          <h2>&lt;\&gt; CodeBug</h2>
+          <p>Designed by Santoshi, Manjot, Prince, Priya, Monika with &hearts;</p>
+          <p>Students of Bachelor of Computer Application</p>
+          
+        </div>
+
+        <div class="our-srvcs footer-div">
+          <h2>Our Services</h2>
+          <ul>
+            <li>Web Design</li>
+            <li>Web Development</li>
+            <li>App Development</li>
+            <li>Website Maintanance</li>
+          </ul>
+        </div>
+
+        <div class="contact footer-div">
+          <h2>Contact Info</h2>
+          <ul>
+            <li><span class="material-symbols-outlined">call</span> 7696838961</li>
+            <li><span class="material-symbols-outlined">mail</span> prince1432810@gmail.com</li>
+            <li><i class="fa-brands fa-twitter"></i>@8001Prince4262</li>
+            <li><span class="material-symbols-outlined">location_on</span> Balachaur, 144526, SBS Nagar</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="../myjs.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

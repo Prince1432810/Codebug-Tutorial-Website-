@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../bug1.png"/>
+    <title>CodeBug - Making Bug Fixes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <nav class="navbar bg-dark sticky-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+          <label for="snav"><span class="material-symbols-outlined mybtn btn" >sort</span></label>
+          <a class="navbar-brand" href="#"><b>&lt;&Backslash;&gt; CodeBug</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../docs.html">Docs</a>
+              </li>
+              <li class="nav-item">
+                <a href="../about_us.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="../contact_us.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Compiler
+                </a>
+                <ul class="dropdown-menu  dropdown-menu-end animate slideIn">
+                  <li><a class="dropdown-item" href="https://www.programiz.com/c-programming/online-compiler/">C</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/cpp-programming/online-compiler/">C++</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/java-programming/online-compiler/">Java</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/html/online-compiler/">HTML, CSS, JS</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/python-programming/online-compiler/">Python</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/csharp-programming/online-compiler/">C#</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/php/online-compiler/">PHP</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <label class="theme" for="changeColorCheckbox">
+                  <input type="checkbox" class="hide" id="changeColorCheckbox">
+                  <span class="material-symbols-outlined nav-link">light_mode</span>
+                </label>
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div class="navbar2">
+      <div class="nav-container">
+        <a href="../HTML/index.html" class="html-nav">HTML</a>
+        <a href="../CSS/index.html" class="css-nav">CSS</a>
+        <a class="js-nav disable" >JavaScript</a>
+        <a href="../Java/index.html" class="java-nav" id="full">Java</a>
+        <a class="c-nav disable" >C</a>
+        <a class="cpp-nav disable" >C++</a>
+      </div>
+    </div>
+    <input type="checkbox" id="snav">
+
+    <div class="main">
+      <section class="overlay"></section>
+      <aside>
+        <div class="sidebar" id="sidebar">
+          <h4>Introduction to Java</h4>
+          <a href="index.html">History and Evolution</a>
+          <a href="java_jbm.html">Java Virtual Machine(JVM)</a>
+          <a href="java_jdk.html">Java Development Kit(JDK)</a>
+   
+          <h4>Basic Concepts</h4>
+          <a href="java_var_datatype.html">Variables and Data Types</a>
+          <a href="java_operators.html">Operators</a>
+          <a href="java_controlflow.html">Control Flow</a>
+          <!-- <a href="#">Loops</a><br> -->
+
+          <h4>Object-Oriented Programming(OOP)</h4>       
+          <a href="java_class_obj.html">Classes and Objects</a>
+          <a href="java_inheritance.html">Inheritance</a>
+          <a href="java_poly.html">Polymorphism</a>
+          <a href="java_encap.html">Encapsualtion</a>
+          <a href="java_abs.html">Abstraction</a>
+
+          <h4>Exception Handling</h4>
+          <a href="java_try_catch.html" class="cur-page">try,catch,finaly</a>
+          <a href="java_custom_exp.html">Custom Exceptions</a>
+
+          <h4>Collections Framework</h4> 
+          <a href="list_set.html">Lists,Sets,Maps</a>
+          <a href="arraylist.html">ArrayList,LinkedList</a>
+          <a href="java_hashset.html">HashSet,TreeSet</a>
+          <a href="hashmap.html">HashMap,TreeMap</a>
+  
+          <h4>File Handling</h4>
+          <a href="file_read_write.html">Reading and Writing Files</a>
+          <a href="fileio.html">File I/O Streams</a>
+
+          <h4>Multithreading</h4>
+          <a href="java_thread.html">Thread</a>
+          <a href="java_syn.html">Synchronization</a>
+          <a href="java_thread_pool.html">Thread Pools</a>
+
+          <h4>Networking in Java</h4>
+          <a href="java_socket_prog.html">Socket Programming</a>
+          <a href="java_url.html">URL and HttpURLConnection</a>
+   
+          <h4>Database Connectivity</h4>
+          <a href="java_jdbc.html">JDBC(Java Database Connectivity)</a>
+
+          <h4>GUI Development</h4>
+          <a href="java_awt.html">AWT(Abstract Window Toolkit)</a>
+          <a href="java_swing.html">Swing</a>
+          <a href="javaFX.html">JavaFX</a>
+
+          <h4>Java EE(Enterprise Edition)</h4>
+          <a href="java_servlet.html">Servlets</a>
+          <a href="jsp.html">JSP(JavaServer Pages)</a>
+
+          <h4>Frameworks</h4>
+          <a href="java_spring_frame.html">Spring Framework</a>
+          <a href="java_hibernate.html">Hibernate</a>
+
+          <h4>Java Security</h4>
+          <a href="java_crypto.html">Cryptography</a>
+          <a href="java_secure.html">Secure Coding Practices</a>
+          
+          <h4>Others</h4>
+          <a href="java_lambda.html">Lambda Expressions and Functional Interfaces</a>
+          <a href="unit_test.html">Unit Testing with JUnit</a>
+          <a href="annoa.html">Annotations</a>
+          <a href="java_restful_web.html">Restful Web Services</a>
+          <a href="javaFX_for_desktop.html">JavaFX for Desktop Applications</a>
+          <a href="java_maven.html">Maven and Gradle for Build Automation</a>
+          <a href="java_best_prac.html">Java Best Practices and Design Patterns</a>     
+          <br><br>
+        </div>
+      </aside>
+    
+          <div class="main-content">
+            
+            <main>
+              <div class="page-nav">
+                <a href="java_abs.html" class="prev btn btn-outline-primary">&lt; Prev</a>
+            <a href="java_custom_exp.html" class="next btn btn-outline-primary">Next &gt;</a>
+              </div>
+            
+            <h1>Exception Handling in Java</h1><br>
+            <p><b>Exception handling</b> in Java refers to the process of managing and responding to errors or exceptional conditions that occur during the execution of a Java program. Exceptions represent unexpected events that disrupt the normal flow of a program, such as invalid inputs, network failures, file not found errors, or arithmetic errors like division by zero.
+            <p>The main goal of exception handling in Java is to gracefully handle these exceptional conditions by providing a mechanism to detect, handle, and recover from errors. This helps to prevent the program from crashing or behaving unpredictably and allows developers to build robust and reliable applications.</p>
+            <p> In Java, exceptions are represented as objects that are instances of subclasses of the <b>' Throwable '</b> class. When an exceptional condition occurs, an exception object is thrown using the <b>' throw '</b> keyword. The program then looks for code that can catch and handle the thrown exception using try-catch blocks.
+            <p>The try-catch mechanism allows developers to isolate code that may potentially throw exceptions within a <b>' try '</b> block and specify how to handle these exceptions in corresponding <b>' catch '</b> blocks. Multiple catch blocks can be used to handle different types of exceptions or to provide specific handling logic for different error scenarios.</p>
+            <p>Additionally, the <b>' finally '</b> block can be used to specify cleanup code that should always be executed, regardless of whether an exception occurred or not. This is useful for releasing resources or performing other cleanup tasks that are necessary for the proper functioning of the program.</p>
+            <p>Overall, exception handling in Java provides a structured approach to dealing with errors, enabling developers to write more reliable and maintainable code. It promotes better error reporting, debugging, and recovery strategies, ultimately improving the overall quality and resilience of Java applications.</p>
+             
+            <h3>Types of Exception in java </h3>
+              <p>In Java, exceptions are categorized into two main types: checked exceptions and unchecked exceptions. Additionally, there are also errors, which are similar to unchecked exceptions but are typically used to represent serious problems that are beyond the control of the programmer. Here's an overview of each type:</p>
+              <ol>
+                <li><h5 class="i">Checked Exceptions : </h5>
+                  <ul>
+                    <li>Checked exceptions are exceptions that must be either caught or declared in the method signature using the <b>' throws '</b> keyword.</li><br>
+                    <li>These exceptions are subclasses of <b>' Exception '</b> (excluding RuntimeException and its subclasses).</li><br>
+                    <li>Examples include: 
+                        <ul>
+                              <li><b>' IOException:  '</b>Signals an input/output error.</li>
+                              <li><b>' SQLException: '</b> Indicates a database access error.</li>
+                              <li><b>' ParseException: '</b>Represents an error while parsing strings.</li>
+                              <li><b>' FileNotFoundException: '</b>Indicates that a file could not be found.</li>
+                          </ul>
+                      </li>
+                  </ul>
+                </li><br>
+                <li><h5 class="i">Unchecked Exceptions : </h5>
+                  <ul>
+                    <li>Unchecked exceptions are exceptions that do not need to be caught or declared. They are subclasses of <b>' RuntimeException '</b> or <b>' Error '</b>.</li><br>
+                    <li>These exceptions typically represent programming errors or exceptional conditions that may occur at runtime.</li><br>
+                    <li>Examples include:
+                        <ul>
+                            <li><b>' NullPointerException : '</b>Thrown when trying to access or call methods on a null object reference.</li>
+                            <li><b>' IllegalArgumentException : '</b>Indicates that a method has been passed an illegal or inappropriate argument.</li>
+                            <li><b>' ArithmeticException : '</b>Represents an error in arithmetic operations, such as division by zero.</li>
+                            <li><b>' ArrayIndexOutOfBoundsException : '</b>Thrown when trying to access an array element with an illegal index.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li><br>
+                  <li><h5 class="i">Errors : </h5>
+                    <ul>
+                      <li>Errors represent serious problems that are typically beyond the control of the programmer.</li><br>
+                      <li>Errors are subclasses of Error.</li><br>
+                      <li>Examples include:
+                       <ul>
+                          <li><b>' OutOfMemoryError : '</b>Indicates that the Java Virtual Machine (JVM) has run out of memory.</li>
+                          <li><b>' StackOverflowError : '</b>Indicates that the stack size has exceeded its limit.</li>
+                          <li><b>' AssertionError : '</b>Thrown when an assertion has failed.</li>
+                      </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+              </ol>
+
+              <h1>Try Block in Java</h1>
+              <p>In Java, the <b>' try '</b> block is a fundamental component of exception handling that allows developers to enclose code that might throw exceptions. The <b>' try '</b> block is followed by one or more <b>' catch '</b> blocks and an optional <b>' finally '</b> block. Here's a detailed explanation of the <b>' try '</b> block:</p>
+              <ol><li><h5 class="i">Syntax : </h5>  </li>
+<pre class="line-numbers"><code class="language-js">
+try {
+    // code that may throw exceptions
+} catch (ExceptionType1 e1) {
+    // exception handling code for ExceptionType1
+} catch (ExceptionType2 e2) {
+    // exception handling code for ExceptionType2
+} finally {
+    // optional finally block for cleanup code
+}
+</code></pre>
+            <br>
+              <li><h5 class="i">Functionality : </h5>
+                <ul>
+                  <li>The <b>' try '</b> block contains the code that might throw exceptions. It is used to encapsulate the risky code that may cause exceptions during execution.</li><br>
+                 <li>When an exception occurs within the <b>' try '</b> block, the execution of code inside the <b>' try '</b> block is interrupted, and the control is transferred to the appropriate <b>' catch '</b> block.</li><br>
+                 <li>Only one <b>' catch '</b> block is executed for a given exception. The type of exception thrown determines which <b>' catch '</b> block is executed. If no matching <b>' catch '</b> block is found, the exception propagates to the caller or the default exception handler if it's the main method.</li><br>
+                 <li>If there is a <b>' finally '</b> block, it is executed regardless of whether an exception occurred or not. The <b>' finally '</b> block is commonly used for releasing resources or performing cleanup operations, ensuring that certain actions are always performed, such as closing files or releasing database connections.</li>
+                </ul>
+              </li>
+                
+                <li><h5 class="i">Example : </h5></li>
+<pre calss="line-numbers"> <code class="language-js">
+try {
+      int result = divide(10, 0); // May throw ArithmeticException
+        System.out.println("Result: " + result);
+} catch (ArithmeticException e) {
+       System.out.println("Error: Division by zero");
+} finally {
+    System.out.println("Finally block executed");
+}
+
+  // Method that may throw ArithmeticException
+static int divide(int numerator, int denominator) {
+    return numerator / denominator;
+}
+</code></pre><br>
+In this example, the <b>' try '</b> block encloses the division operation that might throw an <b>' ArithmeticException '</b> if the denominator is zero. If such an <b>' exception '</b> occurs, control transfers to the <b>' catch '</b> block, which handles the exception by printing an error message. Finally, the <b>' finally '</b> block is executed to print a message indicating that it has been executed regardless of whether an exception occurred.
+
+               </ol>
+
+                <h1>Catch Block in Java</h1>
+                <p>In Java, the catch block is a fundamental component of exception handling. It follows a try block and is used to catch and handle exceptions that are thrown within the try block. Here's a detailed explanation of the catch block:</p>
+                <ol><li><h5 class="i">Syntax : </h5></li>
+<pre class="line-numbers"><code class="language-css">
+  try {
+    // code that may throw exceptions
+} catch (ExceptionType1 e1) {
+    // exception handling code for ExceptionType1
+} catch (ExceptionType2 e2) {
+    // exception handling code for ExceptionType2
+} finally {
+    // optional finally block for cleanup code
+}
+</code></pre><br>
+                
+                <li><h5 class="i">Functionality : </h5>
+                  <ul>
+                    <li>The <b>' catch '</b> block catches and handles exceptions thrown within the associated <b>' try '</b> block.</li><br>
+                    <li>Multiple <b>' catch '</b> blocks can be used to handle different types of exceptions. The order of catch blocks is significant; more specific exceptions should be caught before more general ones.</li><br>
+                    <li>Each <b>' catch '</b> block specifies the type of exception it can catch (known as the exception type), followed by a parameter (often named e) that represents the exception object.</li><br>
+                    <li>Inside the <b>' catch '</b> block, developers can write code to handle the exception, such as logging an error message, displaying a user-friendly error dialog, or performing recovery actions.</li><br>
+                    <li>After executing the code inside the <b>' catch '</b> block, control moves to the code after the <b>' try-catch '</b>  block.</li>
+                  </ul>
+                </li>
+              
+                <li><h5 class="i">Example : </h5><br></li>
+<pre class="line-numbers"><code class="language-js">
+  try {
+    int result = divide(10, 0); // May throw ArithmeticException
+    System.out.println("Result: " + result);
+} catch (ArithmeticException e) {
+    System.out.println("Error: Division by zero");
+} finally {
+    System.out.println("Finally block executed");
+}
+
+// Method that may throw ArithmeticException
+static int divide(int numerator, int denominator) {
+    return numerator / denominator;
+}
+</code></pre><br>
+In this example, the <b>' catch '</b> block catches and handles the <b>' ArithmeticException  '</b>thrown by the <b>' divide '</b>  method if the denominator is zero. The code inside the <b>' catch '</b>  block prints an error message to the console.
+              
+              </ol>
+
+              <h1>Finally Block in Java</h1>
+              <p>In Java, the <b>' finally '</b> block is a key component of exception handling that follows a <b>' try '</b> block and its associated <b>' catch '</b> blocks (if any). The <b>' finally '</b> block is optional but commonly used for cleanup tasks or releasing resources. Here's a detailed explanation of the <b>' finally '</b> block:</p>
+              <ol>
+                <li><h5 class="i">Syntax : </h5></li>
+<pre class="line-numbers"><code class="language-js">
+  try {
+    // code that may throw exceptions
+} catch (ExceptionType1 e1) {
+    // exception handling code for ExceptionType1
+} catch (ExceptionType2 e2) {
+    // exception handling code for ExceptionType2
+} finally {
+    // optional finally block for cleanup code
+}
+</code></pre><br>
+             
+            <li><h5 class="i">Functionality : </h5>
+              <ul>
+                <li>The <b>' finally '</b> block contains code that is always executed, regardless of whether an exception occurred or not.</li><br>
+              <li>Even if an exception is thrown within the try block and caught by a <b>' catch '</b> block (or propagated up the call stack), the code inside the <b>' finally '</b> block will still be executed.</li><br>
+              <li>The primary purpose of the <b>' finally '</b> block is to ensure that certain actions are always performed, such as releasing resources, closing files, or cleaning up temporary data structures.</li><br>
+              <li>The <b>' finally '</b> block is particularly useful for cleanup tasks that need to be executed regardless of whether an exception occurred, such as releasing database connections or closing network sockets.</li><br>
+              <li>If a <b>' finally '</b> block is present, it will be executed even if control enters the <b>' try '</b> block and never leaves it (e.g., due to an infinite loop or an early return statement).</li><br>
+              <li>It's important to note that the <b>' finally '</b> block does not have access to the exception object (if any) that caused the <b>' try '</b> block to terminate.</li>
+            </ul>
+            </li>
+          
+          <li><h5 class="i">Example : </h5></li>
+<pre class="line-numbers"> <code class="language-js">
+  try {
+    // code that may throw exceptions
+} catch (IOException e) {
+    // exception handling code for IOException
+} finally {
+    // cleanup code (e.g., closing resources)
+}
+</code> 
+</pre><br>
+In this example, the <b>' finally '</b> block contains cleanup code that is guaranteed to be executed, regardless of whether an IOException occurred within the <b>' try '</b> block and whether it was caught by a <b>' catch '</b> block.
+         
+            </ol>
+
+          </main>
+          <div class="footer">
+            <div class="brand footer-div">
+              <h2>&lt;\&gt; CodeBug</h2>
+              <p>Designed by Santoshi, Manjot, Prince, Priya, Monika with &hearts;</p>
+              <p>Students of Bachelor of Computer Application</p>
+              
+            </div>
+  
+            <div class="our-srvcs footer-div">
+              <h2>Our Services</h2>
+              <ul>
+                <li>Web Design</li>
+                <li>Web Development</li>
+                <li>App Development</li>
+                <li>Website Maintanance</li>
+              </ul>
+            </div>
+  
+            <div class="contact footer-div">
+              <h2>Contact Info</h2>
+              <ul>
+                <li><span class="material-symbols-outlined">call</span> 7696838961</li>
+                <li><span class="material-symbols-outlined">mail</span> prince1432810@gmail.com</li>
+                <li><i class="fa-brands fa-twitter"></i>@8001Prince4262</li>
+                <li><span class="material-symbols-outlined">location_on</span> Balachaur, 144526, SBS Nagar</li>
+              </ul>
+            </div>
+          </div>
+    </div>
+    </div>
+
+    <script src="../myjs.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

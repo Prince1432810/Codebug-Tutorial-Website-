@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../bug1.png"/>
+    <title>CodeBug - Making Bug Fixes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <nav class="navbar bg-dark sticky-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+          <label for="snav"><span class="material-symbols-outlined mybtn btn" >sort</span></label>
+          <a class="navbar-brand" href="#"><b>&lt;&Backslash;&gt; CodeBug</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../docs.html">Docs</a>
+              </li>
+              <li class="nav-item">
+                <a href="../about_us.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="../contact_us.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Compiler
+                </a>
+                <ul class="dropdown-menu  dropdown-menu-end animate slideIn">
+                  <li><a class="dropdown-item" href="https://www.programiz.com/c-programming/online-compiler/">C</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/cpp-programming/online-compiler/">C++</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/java-programming/online-compiler/">Java</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/html/online-compiler/">HTML, CSS, JS</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/python-programming/online-compiler/">Python</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/csharp-programming/online-compiler/">C#</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/php/online-compiler/">PHP</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <label class="theme" for="changeColorCheckbox">
+                  <input type="checkbox" class="hide" id="changeColorCheckbox">
+                  <span class="material-symbols-outlined nav-link">light_mode</span>
+                </label>
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div class="navbar2">
+      <div class="nav-container">
+        <a href="../HTML/index.html" class="html-nav">HTML</a>
+        <a href="../CSS/index.html" class="css-nav">CSS</a>
+        <a class="js-nav disable" >JavaScript</a>
+        <a href="../Java/index.html" class="java-nav" id="full">Java</a>
+        <a class="c-nav disable" >C</a>
+        <a class="cpp-nav disable" >C++</a>
+      </div>
+    </div>
+    <input type="checkbox" id="snav">
+
+    <div class="main">
+      <section class="overlay"></section>
+      <aside>
+        <div class="sidebar" id="sidebar">
+          <h4>Introduction to Java</h4>
+          <a href="index.html">History and Evolution</a>
+          <a href="java_jbm.html">Java Virtual Machine(JVM)</a>
+          <a href="java_jdk.html">Java Development Kit(JDK)</a>
+   
+          <h4>Basic Concepts</h4>
+          <a href="java_var_datatype.html">Variables and Data Types</a>
+          <a href="java_operators.html">Operators</a>
+          <a href="java_controlflow.html">Control Flow</a>
+          <!-- <a href="#">Loops</a><br> -->
+
+          <h4>Object-Oriented Programming(OOP)</h4>       
+          <a href="java_class_obj.html">Classes and Objects</a>
+          <a href="java_inheritance.html">Inheritance</a>
+          <a href="java_poly.html">Polymorphism</a>
+          <a href="java_encap.html">Encapsualtion</a>
+          <a href="java_abs.html">Abstraction</a>
+
+          <h4>Exception Handling</h4>
+          <a href="java_try_catch.html">try,catch,finaly</a>
+          <a href="java_custom_exp.html">Custom Exceptions</a>
+
+          <h4>Collections Framework</h4> 
+          <a href="list_set.html">Lists,Sets,Maps</a>
+          <a href="arraylist.html">ArrayList,LinkedList</a>
+          <a href="java_hashset.html" class="cur-page">HashSet,TreeSet</a>
+          <a href="hashmap.html">HashMap,TreeMap</a>
+  
+          <h4>File Handling</h4>
+          <a href="file_read_write.html">Reading and Writing Files</a>
+          <a href="fileio.html">File I/O Streams</a>
+
+          <h4>Multithreading</h4>
+          <a href="java_thread.html">Thread</a>
+          <a href="java_syn.html">Synchronization</a>
+          <a href="java_thread_pool.html">Thread Pools</a>
+
+          <h4>Networking in Java</h4>
+          <a href="java_socket_prog.html">Socket Programming</a>
+          <a href="java_url.html">URL and HttpURLConnection</a>
+   
+          <h4>Database Connectivity</h4>
+          <a href="java_jdbc.html">JDBC(Java Database Connectivity)</a>
+
+          <h4>GUI Development</h4>
+          <a href="java_awt.html">AWT(Abstract Window Toolkit)</a>
+          <a href="java_swing.html">Swing</a>
+          <a href="javaFX.html">JavaFX</a>
+
+          <h4>Java EE(Enterprise Edition)</h4>
+          <a href="java_servlet.html">Servlets</a>
+          <a href="jsp.html">JSP(JavaServer Pages)</a>
+
+          <h4>Frameworks</h4>
+          <a href="java_spring_frame.html">Spring Framework</a>
+          <a href="java_hibernate.html">Hibernate</a>
+
+          <h4>Java Security</h4>
+          <a href="java_crypto.html">Cryptography</a>
+          <a href="java_secure.html">Secure Coding Practices</a>
+          
+          <h4>Others</h4>
+          <a href="java_lambda.html">Lambda Expressions and Functional Interfaces</a>
+          <a href="unit_test.html">Unit Testing with JUnit</a>
+          <a href="annoa.html">Annotations</a>
+          <a href="java_restful_web.html">Restful Web Services</a>
+          <a href="javaFX_for_desktop.html">JavaFX for Desktop Applications</a>
+          <a href="java_maven.html">Maven and Gradle for Build Automation</a>
+          <a href="java_best_prac.html">Java Best Practices and Design Patterns</a>     
+          <br><br>
+        </div>
+      </aside>
+    
+          <div class="main-content">
+            
+            <main>
+              <div class="page-nav">
+                <a href="arraylist.html" class="prev btn btn-outline-primary">&lt; Prev</a>
+            <a href="hashmap.html" class="next btn btn-outline-primary">Next &gt;</a>
+              </div>
+           
+            <h1>HashSet in Java</h1><br>
+            <p>In Java, <b>' HashSet '</b> is a part of the Java Collections Framework and is an implementation of the <b>' Set '</b> interface. It represents a collection that does not allow duplicate elements. The primary features of <b>' HashSet '</b> include:</p><br>
+            <ol>
+              <li><h5>Unordered Collection : </h5>
+                <b>' HashSet '</b> does not guarantee the order of its elements. It does not maintain the order in which the elements are inserted.</li><br>
+            <li><h5 class="i">Unique Elements : </h5><b>' HashSet '</b> does not allow duplicate elements. If you attempt to add an element that is already present, the <b>' add() '</b> method will return <b>' false '</b>, indicating that the element was not added.</li><br>
+            <li><h5 class="i">Backed by a Hash Table : </h5>Internally, <b>' HashSet '</b> uses a hash table to store its elements. This allows for constant-time performance for basic operations like adding, removing, and checking for the presence of elements.</li><br>
+            <li><h5 class="i">Null Elements : </h5><b>' HashSet '</b> permits a single null element. It means you can add null to a <b>' HashSet '</b> instance once.</li><br>
+            <li><h5 class="i">Not Synchronized : </h5><b>' HashSet '</b> is not synchronized. If multiple threads access a <b>' HashSet '</b> concurrently, and at least one of the threads modifies the HashSet structurally, it must be synchronized externally.</li><br>
+            <b>HashSet</b> is not synchronized. If multiple threads access a HashSet concurrently, and at least one of the threads modifies the HashSet structurally, it must be synchronized externally.
+<pre class="line-numbers"><code class="language-js">import java.util.HashSet;
+
+public class HashSetExample {
+    public static void main(String[] args) {
+        // Creating a HashSet
+        HashSet&lt;String&gt; hashSet = new HashSet&lt;&gt;();
+  
+        // Adding elements
+        hashSet.add("Apple");
+        hashSet.add("Banana");
+        hashSet.add("Orange");
+        hashSet.add("Apple"); // This will not be added because it's a duplicate
+  
+         // Displaying the HashSet
+        System.out.println("HashSet: " + hashSet);
+  
+        // Removing an element
+        hashSet.remove("Banana");
+  
+        // Checking if an element exists
+        System.out.println("Contains Orange? " + hashSet.contains("Orange"));
+  
+        // Size of the HashSet
+         System.out.println("Size of HashSet: " + hashSet.size());
+    }
+} 
+</code></pre><br>
+      Output : 
+<pre class="line-numbers"><code class="language-js">HashSet: [Orange, Banana, Apple]
+Contains Orange? true
+Size of HashSet: 2
+</code></pre>
+            </ol>
+            <p>Remember, <b>' HashSet '</b> offers constant-time performance for basic operations like add, remove, contains, and size, assuming the hash function disperses the elements properly among the buckets. However, the performance of <b>' HashSet '</b> might degrade if many elements hash to the same bucket, resulting in a longer chain of elements. In such cases, <b>' LinkedHashSet '</b> might be preferred as it maintains insertion order while still offering constant-time performance.</p>
+            <br>
+
+
+            <h1>TreeSet in Java</h1>
+            <p><b>' TreeSet '</b> is another implementation of the Set interface in Java, provided by the Java Collections Framework. It maintains a sorted set of elements using a red-black tree. Here are the key points about <b>' TreeSet '</b>:</p>
+            <ol>
+              <li><h5 class="i">Sorted Set : </h5>Unlike <b>' HashSet '</b>, which does not guarantee any specific order of elements, <b>' TreeSet '</b> maintains the elements in sorted order. This ordering can be the natural ordering of the elements (if they implement the Comparable interface) or a custom ordering provided by a Comparator at the time of <b>' TreeSet '</b> creation.</li><br>
+              <li><h5 class="i">Red-Black Tree : </h5>Internally, <b>' TreeSet '</b> uses a self-balancing binary search tree called a red-black tree to store its elements. This ensures that the operations like add, remove, and search have a time complexity of <b>O(log n)</b>, where n is the number of elements in the <b>' TreeSet '</b>.</li><br>
+              <li><h5 class="i">No Duplicates : </h5>Like all implementations of the <b>' Set '</b> interface, <b>' TreeSet '</b> does not allow duplicate elements. If you attempt to add a duplicate element, the <b>' add() '</b> method will simply return <b>' false '</b>, indicating that the element was not added.</li><br>
+              <li><h5 class="i">Null Elements : </h5><b>' TreeSet '</b> does not allow null elements. If you try to add null to a <b>' TreeSet '</b>, it will throw a <b>' NullPointerException '</b>.</li><br>
+              <li><h5 class="i">Not Synchronized : </h5>Similar to <b>' HashSet '</b>, <b>' TreeSet '</b> is not synchronized. If multiple threads access a <b>' TreeSet '</b> concurrently, and at least one of the threads modifies the <b>' TreeSet '</b> structurally, it must be synchronized externally</li><br>
+              Here's a simple example of how to use <b>' TreeSet '</b>:
+<pre class="line-numbers"><code class="language-js">import java.util.TreeSet;
+
+public class TreeSetExample {
+    public static void main(String[] args) {
+        // Creating a TreeSet of strings
+        TreeSet&lt;String&gt; treeSet = new TreeSet&lt;&gt;();
+
+        // Adding elements
+        treeSet.add("Apple");
+        treeSet.add("Banana");
+        treeSet.add("Orange");
+        treeSet.add("Apple"); // This will not be added because it's a duplicate
+
+        // Displaying the TreeSet
+        System.out.println("TreeSet: " + treeSet);
+
+        // Removing an element
+        treeSet.remove("Banana");
+
+        // Checking if an element exists
+        System.out.println("Contains Orange? " + treeSet.contains("Orange"));
+
+        // Size of the TreeSet
+        System.out.println("Size of TreeSet: " + treeSet.size());
+    }
+}
+</code></pre><br>
+          output : 
+<pre class="line-numbers"><code class="language-js">TreeSet: [Apple, Banana, Orange]
+Contains Orange? true
+Size of TreeSet: 2  
+</code></pre><br>
+          In summary, <b>' TreeSet '</b> is a sorted set implementation in Java that uses a red-black tree for storage and provides efficient operations for maintaining a sorted collection of unique elements.
+            </ol>   
+            </main>
+            <div class="footer">
+              <div class="brand footer-div">
+                <h2>&lt;\&gt; CodeBug</h2>
+                <p>Designed by Santoshi, Manjot, Prince, Priya, Monika with &hearts;</p>
+                <p>Students of Bachelor of Computer Application</p>
+                
+              </div>
+    
+              <div class="our-srvcs footer-div">
+                <h2>Our Services</h2>
+                <ul>
+                  <li>Web Design</li>
+                  <li>Web Development</li>
+                  <li>App Development</li>
+                  <li>Website Maintanance</li>
+                </ul>
+              </div>
+    
+              <div class="contact footer-div">
+                <h2>Contact Info</h2>
+                <ul>
+                  <li><span class="material-symbols-outlined">call</span> 7696838961</li>
+                  <li><span class="material-symbols-outlined">mail</span> prince1432810@gmail.com</li>
+                  <li><i class="fa-brands fa-twitter"></i>@8001Prince4262</li>
+                  <li><span class="material-symbols-outlined">location_on</span> Balachaur, 144526, SBS Nagar</li>
+                </ul>
+              </div>
+            </div>
+    </div>
+    </div>
+    <script src="../myjs.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
