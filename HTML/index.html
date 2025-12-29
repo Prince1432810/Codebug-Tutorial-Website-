@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../bug1.png"/>
+    <title>CodeBug - Making Bug Fixes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <nav class="navbar bg-dark sticky-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+          <label for="snav"><span class="material-symbols-outlined mybtn btn" >sort</span></label>
+          <a class="navbar-brand" href="#"><b>&lt;&Backslash;&gt; CodeBug</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../docs.html">Docs</a>
+              </li>
+              <li class="nav-item">
+                <a href="../about_us.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="../contact_us.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Compiler
+                </a>
+                <ul class="dropdown-menu  dropdown-menu-end animate slideIn">
+                  <li><a class="dropdown-item" href="https://www.programiz.com/c-programming/online-compiler/">C</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/cpp-programming/online-compiler/">C++</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/java-programming/online-compiler/">Java</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/html/online-compiler/">HTML, CSS, JS</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/python-programming/online-compiler/">Python</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/csharp-programming/online-compiler/">C#</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/php/online-compiler/">PHP</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <label class="theme" for="changeColorCheckbox">
+                  <input type="checkbox" class="hide" id="changeColorCheckbox">
+                  <span class="material-symbols-outlined nav-link">light_mode</span>
+                </label>
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div class="navbar2">
+      <div class="nav-container">
+        <a href="../HTML/index.html" class="html-nav" id="full">HTML</a>
+        <a href="../CSS/index.html" class="css-nav">CSS</a>
+        <a class="js-nav disable" >JavaScript</a>
+        <a href="../Java/index.html" class="java-nav">Java</a>
+        <a class="c-nav disable" >C</a>
+        <a class="cpp-nav disable" >C++</a>
+      </div>
+    </div>
+    <input type="checkbox" id="snav">
+
+    <div class="main">
+      <section class="overlay"></section>
+      <aside>
+        <div class="sidebar" id="sidebar">
+          <h4>Introduction to HTML</h4>
+          
+          <a href="index.html" class="cur-page">What is HTML</a>
+          <a href="history.html">History of HTML</a>
+          <a href="basic_structure.html">Basic structure</a>
+          
+          <h4>HTML Document Structure</h4>
+          
+          <a href="htmlhead.html">HTML Head</a>
+          <a href="html_body.html">HTML Body</a>
+          
+          <h4>HTML Text Formatting</h4>
+          
+          <a href="text_formatting_tags.html">Text formatting tags</a>
+          <a href="supsub.html">Superscript and Subscript</a>
+          <a href="strikethrough.html">Strikethrough</a>
+          <a href="semantic_text_elements.html">Semantic Text Elements</a>
+          
+          <h4>HTML Lists</h4>
+          
+          <a href="order_list.html">Ordered Lists</a>
+          <a href="unorder_list.html">Unordered Lists</a>
+          <a href="definition_list.html">Definition Lists</a>
+          
+          <h4>HTML Links</h4>
+          
+          <a href="creating_hyperlinks.html">Creating hyperlinks</a>
+          <a href="linking_to_external_websites.html">Linking to external websites</a>
+          <a href="linking_to_internal_pages.html">Linking to internal pages</a>
+          <a href="anchor_tags_and_navigation.html">Anchor tags and navigation</a>
+          
+          <h4>HTML Images</h4>
+          
+          <a href="embedding_images.html">Embedding images</a>
+          <a href="image_attributes.html">Image attributes</a>
+          <a href="image_maps.html">Image maps</a>
+          
+          <h4>HTML Forms</h4>
+          
+          <a href="creating_forms.html">Creating forms</a>
+          <a href="form_elements.html">Form elements</a>
+          <a href="submitting_forms.html">Submitting forms and form validation</a>
+          
+          <h4>HTML Tables</h4>
+          
+          <a href="table_structure.html">Table structure</a>
+          <a href="table_styling.html">Table styling and attributes</a>
+          
+          <h4>HTML Semantic Elements</h4>
+          
+          <a href="semantic_html.html">Semantic HTML and its importance</a>
+          <a href="semantic_program.html">Semantic Tags Program</a> 
+          
+          <h4>HTML Multimedia</h4>
+          
+          <a href="embedding_audio.html">Embedding audio and video</a>
+          <a href="embedding_external_content.html">Embedding external content</a>
+          
+          <h4>HTML and CSS Integration</h4>
+          
+          <a href="linking_css.html">Linking CSS stylesheets to HTML</a>
+          <a href="inline_styles.html">Inline styles and internal styles</a>
+          <a href="understanding_cascade.html">Understanding the cascade in CSS</a>    
+          <br><br>
+          
+        </div>
+      </aside>
+      
+        <div class="main-content">
+          <main>
+            <div class="page-nav">
+              <a href="../docs.html" class="prev btn btn-outline-primary">&lt; Docs</a>
+              <a href="history.html" class="next btn btn-outline-primary">Next &gt;</a>
+            </div>
+            <h1>
+              What is HTML?
+            </h1>
+            <p><b>HTML(HyperText Markup Language) </b>is the standard markup language used to create the structure of web pages. It is the back bone of web develpment and is essential for building and designing websites. HTML allows you to organize content on a webpage and define the various elements that make up a webpage.</p>
+            <p>Each HTML element represents a specific part of the content, and elements can be nested within each other to create a hierarchy. The structure defined by HTML is interpreted by web browsers to render and display the content to users. HTML documents are typically saved with a .html extension and can be created and edited using plain text editors or specialized web development tools.</p>
+            <p>In essence, HTML serves as the backbone of web content, allowing developers to define the structure, headings, paragraphs, links, images, and other elements that make up a webpage. It provides a standardized way to create and organize information on the internet, ensuring consistency and compatibility across different browsers.</p><br>
+            <img src="html5_benefits.jpg" style="background-size: cover; width: 80%; margin-left: auto; margin-right: auto; display: block;"><br><br>
+            <h1>Characteristics of Html</h1>
+            <p>HTML, which stands for HyperText Markup Language, is the standard markup language for creating and structuring web pages. Here are some key characteristics of HTML:</p>
+            <ol>
+              <li><h3>Markup Language : </h3>HTML, short for HyperText Markup Language, is the standard language used to create and design web pages. It serves as the foundation for structuring content on the World Wide Web. HTML allows web browsers to interpret and display text, images, links, multimedia, and other elements in a visually appealing format.</li><br><br>
+              <li><h3>Platform Independence : </h3> HTML is platform-independent, meaning it can be rendered and displayed consistently across different devices and operating systems. Web browsers interpret HTML code and render web pages accordingly, ensuring a consistent user experience across various platforms.</li><br><br>
+              <li><h3>Text-Based Format : </h3>HTML is a text-based format, making it human-readable and easily editable using simple text editors. Developers can write HTML code using plain text, without the need for specialized software or tools, which enhances accessibility and flexibility.</li><br><br>
+              <li><h3>Hierarchical Structure : </h3>HTML documents have a hierarchical structure, organized in a tree-like fashion with nested elements. Elements are arranged hierarchically, with parent, child, and sibling relationships defining the structure of the document. This hierarchical structure enables developers to create complex layouts and organize content effectively.</li><br><br>
+              <li><h3>Extensibility : </h3> HTML is extensible, allowing developers to create custom elements and attributes to suit specific requirements. While adhering to standard HTML elements and attributes is recommended for compatibility and consistency, developers can extend HTML functionality through frameworks like HTML5 and custom elements defined using JavaScript.</li><br><br>
+              <li><h3>Support for Multimedia : </h3>HTML provides native support for embedding multimedia content, such as images, audio, video, and interactive graphics, directly into web pages. Elements like <b>(&lt;img&gt;)</b>, <b>(&lt;audio&gt;)</b>, <b>(&lt;video&gt;)</b>, and <b>(&lt;canvas&gt;)</b> enable developers to integrate rich multimedia experiences seamlessly within HTML documents.</li><br><br>
+              <li><h3>Accessibility : </h3>HTML promotes accessibility by providing semantic elements and attributes that enhance the usability and navigability of web pages for users with disabilities. Semantic HTML elements like headings, lists, landmarks, and form controls improve screen reader compatibility, keyboard navigation, and overall accessibility compliance.</li><br><br>
+              <li><h3>Compatibility with CSS and JavaScript : </h3>HTML works seamlessly with Cascading Style Sheets (CSS) and JavaScript, allowing developers to enhance the presentation and functionality of web pages. CSS enables developers to style HTML elements, while JavaScript facilitates dynamic interactions and manipulation of HTML content, resulting in richer user experiences.</li><br><br>
+              <li><h3>Interoperability : </h3>HTML is designed for interoperability, allowing web pages to integrate seamlessly with other technologies and standards. HTML documents can incorporate content from various sources, including images, videos, scripts, and external resources, to create cohesive and interconnected web experiences.</li><br><br>
+              <li><h3>Evolution and Standardization : </h3>HTML is continuously evolving, with new features and enhancements introduced through standardized specifications maintained by organizations like the World Wide Web Consortium (W3C) and the Web Hypertext Application Technology Working Group (WHATWG). Regular updates and revisions ensure that HTML remains relevant and adaptable to the evolving landscape of web development.</li>
+    
+            </ol>
+            <p>By leveraging these characteristics, developers can create dynamic, accessible, and visually engaging web pages using HTML as the foundation.</p>
+          </main>
+          <div class="footer">
+            <div class="brand footer-div">
+              <h2>&lt;\&gt; CodeBug</h2>
+              <p>Designed by Santoshi, Manjot, Prince, Priya, Monika with &hearts;</p>
+              <p>Students of Bachelor of Computer Application</p>
+              
+            </div>
+            
+            <div class="our-srvcs footer-div">
+              <h2>Our Services</h2>
+              <ul>
+                <li>Web Design</li>
+                <li>Web Development</li>
+                <li>App Development</li>
+                <li>Website Maintanance</li>
+              </ul>
+            </div>
+            
+            <div class="contact footer-div">
+              <h2>Contact Info</h2>
+              <ul>
+                <li><span class="material-symbols-outlined">call</span> 7696838961</li>
+                <li><span class="material-symbols-outlined">mail</span> prince1432810@gmail.com</li>
+                <li><i class="fa-brands fa-twitter"></i>@8001Prince4262</li>
+                <li><span class="material-symbols-outlined">location_on</span> Balachaur, 144526, SBS Nagar</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="../myjs.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      
+    </body>
+    </html>

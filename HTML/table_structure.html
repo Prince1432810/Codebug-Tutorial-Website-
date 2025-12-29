@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../bug1.png"/>
+    <title>CodeBug - Making Bug Fixes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <nav class="navbar bg-dark sticky-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+          <label for="snav"><span class="material-symbols-outlined mybtn btn" >sort</span></label>
+          <a class="navbar-brand" href="#"><b>&lt;&Backslash;&gt; CodeBug</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../docs.html">Docs</a>
+              </li>
+              <li class="nav-item">
+                <a href="../about_us.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="../contact_us.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Compiler
+                </a>
+                <ul class="dropdown-menu  dropdown-menu-end animate slideIn">
+                  <li><a class="dropdown-item" href="https://www.programiz.com/c-programming/online-compiler/">C</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/cpp-programming/online-compiler/">C++</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/java-programming/online-compiler/">Java</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/html/online-compiler/">HTML, CSS, JS</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/python-programming/online-compiler/">Python</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/csharp-programming/online-compiler/">C#</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/php/online-compiler/">PHP</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <label class="theme" for="changeColorCheckbox">
+                  <input type="checkbox" class="hide" id="changeColorCheckbox">
+                  <span class="material-symbols-outlined nav-link">light_mode</span>
+                </label>
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div class="navbar2">
+      <div class="nav-container">
+        <a href="../HTML/index.html" class="html-nav" id="full">HTML</a>
+        <a href="../CSS/index.html" class="css-nav">CSS</a>
+        <a class="js-nav disable" >JavaScript</a>
+        <a href="../Java/index.html" class="java-nav">Java</a>
+        <a class="c-nav disable" >C</a>
+        <a class="cpp-nav disable" >C++</a>
+      </div>
+    </div>
+    <input type="checkbox" id="snav">
+
+    <div class="main">
+      <section class="overlay"></section>
+      <aside>
+        <div class="sidebar" id="sidebar">
+          <h4>Introduction to HTML</h4>
+          
+          <a href="index.html">What is HTML</a>
+          <a href="history.html">History of HTML</a>
+          <a href="basic_structure.html">Basic structure</a>
+          
+          <h4>HTML Document Structure</h4>
+          
+          <a href="htmlhead.html">HTML Head</a>
+          <a href="html_body.html">HTML Body</a>
+          
+          <h4>HTML Text Formatting</h4>
+          
+          <a href="text_formatting_tags.html">Text formatting tags</a>
+          <a href="supsub.html">Superscript and Subscript</a>
+          <a href="strikethrough.html">Strikethrough</a>
+          <a href="semantic_text_elements.html">Semantic Text Elements</a>
+          
+          <h4>HTML Lists</h4>
+          
+          <a href="order_list.html">Ordered Lists</a>
+          <a href="unorder_list.html">Unordered Lists</a>
+          <a href="definition_list.html">Definition Lists</a>
+          
+          <h4>HTML Links</h4>
+          
+          <a href="creating_hyperlinks.html">Creating hyperlinks</a>
+          <a href="linking_to_external_websites.html">Linking to external websites</a>
+          <a href="linking_to_internal_pages.html">Linking to internal pages</a>
+          <a href="anchor_tags_and_navigation.html">Anchor tags and navigation</a>
+          
+          <h4>HTML Images</h4>
+          
+          <a href="embedding_images.html">Embedding images</a>
+          <a href="image_attributes.html">Image attributes</a>
+          <a href="image_maps.html">Image maps</a>
+          
+          <h4>HTML Forms</h4>
+          
+          <a href="creating_forms.html">Creating forms</a>
+          <a href="form_elements.html">Form elements</a>
+          <a href="submitting_forms.html">Submitting forms and form validation</a>
+          
+          <h4>HTML Tables</h4>
+          
+          <a href="table_structure.html" class="cur-page">Table structure</a>
+          <a href="table_styling.html">Table styling and attributes</a>
+          
+          <h4>HTML Semantic Elements</h4>
+          
+          <a href="semantic_html.html">Semantic HTML and its importance</a>
+          <a href="semantic_program.html">Semantic Tags Program</a> 
+          
+          <h4>HTML Multimedia</h4>
+          
+          <a href="embedding_audio.html">Embedding audio and video</a>
+          <a href="embedding_external_content.html">Embedding external content</a>
+          
+          <h4>HTML and CSS Integration</h4>
+          
+          <a href="linking_css.html">Linking CSS stylesheets to HTML</a>
+          <a href="inline_styles.html">Inline styles and internal styles</a>
+          <a href="understanding_cascade.html">Understanding the cascade in CSS</a>    
+          <br><br>
+          
+        </div>
+      </aside>
+    
+      <div class="main-content">
+        <main>
+          <div class="page-nav">
+            <a href="submitting_forms.html" class="prev btn btn-outline-primary">&lt; Prev</a>
+            <a href="table_styling.html" class="next btn btn-outline-primary">Next &gt;</a>
+          </div>
+        <!-- content goes here  -->
+        <h1>What is Table ?</h1>
+        <p>In HTML, a table is a structured set of data presented in rows and columns. Tables are created using the <b>&lt;table&gt;</b> element, and the content of the table is defined using other elements such as <b>&lt;tr&gt;</b> for table rows, <b>&lt;th&gt;</b> for table headers, and <b>&lt;td&gt;</b> for table data cells.</p>
+        <p>Here's a basic example of an HTML table:</p>
+<pre class="line-numbers"><code class="language-html">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Column 1&lt;/th&gt;
+    &lt;th&gt;Column 2&lt;/th&gt;
+    &lt;th&gt;Column 3&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+    &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+    &lt;td&gt;Row 1, Cell 3&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Row 2, Cell 1&lt;/td&gt;
+    &lt;td&gt;Row 2, Cell 2&lt;/td&gt;
+    &lt;td&gt;Row 2, Cell 3&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><br>
+
+        <p>In this example, we have a table with three columns and two rows. The first row contains table headers (<b>&lt;th&gt;</b> elements), and the subsequent rows contain table data cells (<b>&lt;td&gt;</b> elements). The <b>&lt;tr&gt;</b> element is used to define each row in the table.</p>
+        <p>Tables can be used to display various types of data, such as numerical data, text data, or a combination of both. They can also be styled using CSS to change their appearance, such as the width of columns, the alignment of text within cells, and the background color of cells.</p>
+        
+        <h1>Basic Structure of an HTML Table</h1>
+        <p>An HTML table is defined using the <b>&lt;table&gt;</b> element. Inside the <b>&lt;table&gt;</b> element, you define rows using the <b>&lt;tr&gt;</b> element, and within each row, you define cells using either the <b>&lt;th&gt;</b> (table header) or <b>&lt;td&gt;</b> (table data) elements.</p>
+        <p>Here's a basic example:</p>
+<pre class="line-numbers"><code class="language-html">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><br>     
+
+        <p>In this example, we have a table with two rows and two columns. The first row contains table headers (<b>&lt;th&gt;</b> elements), and the second row contains table data cells (<b>&lt;td&gt;</b> elements).</p><br>
+        <h3>Table Headers</h3>
+        <p>The <b>&lt;th&gt;</b> element is used to define table headers. Table headers are typically used to label the columns or rows of a table. They are rendered in bold by default and are centered horizontally and vertically within the cell.</p>
+<pre class="line-numbers"><code class="language-html">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;First Name&lt;/th&gt;
+    &lt;th&gt;Last Name&lt;/th&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><br>
+
+        <h3>Table Data Cells </h3>
+        <p>The <b>&lt;td&gt;</b> element is used to define table data cells. These cells contain the actual data of the table.</p>
+<pre class="line-numbers"><code class="language-html">&lt;table>&gt;
+  &lt;tr>&gt;
+    &lt;td>&gt;John&lt;/td>&gt;
+    &lt;td>&gt;Doe&lt;/td>&gt;
+  &lt;/tr>&gt;
+&lt;/table>&gt;
+</code></pre><br>
+
+        <h3>Table Row</h3>
+        <p>The <b>&lt;tr&gt;</b> element is used to define a row in a table. Each row contains one or more cells (<b>&lt;th&gt;</b> or <b>&lt;td&gt;</b> elements).</p>
+<pre class="line-numbers"><code class="language-html">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><br>
+
+        <h3>Table Structure</h3>
+        <p>Tables can have a more complex structure with multiple rows and columns. Here's an example:</p>
+<pre class="line-numbers"><code class="language-html">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Column 1&lt;/th&gt;
+    &lt;th&gt;Column 2&lt;/th&gt;
+    &lt;th&gt;Column 3&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+    &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+    &lt;td&gt;Row 1, Cell 3&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Row 2, Cell 1&lt;/td&gt;
+    &lt;td&gt;Row 2, Cell 2&lt;/td&gt;
+    &lt;td&gt;Row 2, Cell 3&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><br>
+
+        <h3>Table Data Cells</h3>
+        <p>The <b>&lt;td&gt;</b> element is used to define table data cells. These cells contain the actual data of the table.</p>
+<pre class="line-numbers"><code class="language-html">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><br> 
+
+        <h3>Table Row</h3>
+        <p>The <b>&lt;tr&gt;</b> element is used to define a row in a table. Each row contains one or more cells (<b>&lt;th&gt;</b> or <b>&lt;td&gt;</b> elements).</p>
+<pre class="line-numbers"><code class="language-html">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><br> 
+
+        <h3>Table Caption</h3>
+        <p>The <b>&lt;caption&gt;</b> element is used to add a caption to a table. It should be placed immediately after the opening <b>&lt;table&gt;</b> tag.</p>
+<pre class="line-numbers"><code class="language-html">&lt;table&gt;
+  &lt;caption&gt;Employee Information&lt;/caption&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><br>
+
+    <h3>Table Structure</h3>
+    <p>Tables can have a more complex structure with multiple rows and columns. Here's an example:</p>
+<pre class="line-numbers"><code class="language-html">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;th&gt;Header 3&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;td&gt;Data 3&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data 4&lt;/td&gt;
+    &lt;td&gt;Data 5&lt;/td&gt;
+    &lt;td&gt;Data 6&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><br>
+
+        <h3>Spanning Rows and Columns</h3>
+        <p>You can use the <b>rowspan</b> and <b>colspan</b> attributes to make a cell span multiple rows or columns.</p>
+<pre class="line-numbers"><code class="language-html">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th colspan="2"&gt;Header 1 and 2&lt;/th&gt;
+    &lt;th&gt;Header 3&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td rowspan="2"&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;td&gt;Data 3&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data 4&lt;/td&gt;
+    &lt;td&gt;Data 5&lt;/td&gt;
+    &lt;td&gt;Data 6&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><br>
+
+        <p>In this example, the first cell in the first row spans two columns (<b>colspan="2"</b>), and the first cell in the second row spans two rows (<b>rowspan="2"</b>).</p>
+        <br>
+        <h3>Styling Tables with CSS</h3>
+        <p>You can use CSS to style tables, including changing the width of columns, the alignment of text within cells, and the background color of cells.</p>
+<pre class="line-numbers"><code class="language-css">table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+</code></pre><br>
+
+        <p>In this example, we're setting the width of the table to 100%, collapsing the borders between cells, setting a border and padding for table headers and data cells, aligning text to the left, and setting a background color for table headers.</p>
+        <br>
+        <h3>Accessibility</h3>
+        <p>When using tables, it's important to consider accessibility. Make sure to use appropriate table headers (<b>&lt;tr&gt;</b>) and data cells (<b>&lt;tr&gt;</b>), and provide a meaningful caption if necessary. Also, ensure that the table is navigable and understandable for screen readers and other assistive technologies.</p>
+        <br>
+        <h3>Conclusion</h3>
+        <p>HTML tables are a powerful way to organize and present data on a web page. They can be as simple or as complex as needed, and they can be styled using CSS to match the design of your website.</p>
+        
+        
+        
+        <!-- content ends here  -->
+        </main>
+        <div class="footer">
+          <div class="brand footer-div">
+            <h2>CodeBug</h2>
+            <p>Designed by Santoshi, Manjot, Prince, Priya, Monika with &hearts;</p>
+            <p>Students of Bachelor of Computer Application</p>
+            
+          </div>
+
+          <div class="our-srvcs footer-div">
+            <h2>Our Services</h2>
+            <ul>
+              <li>Web Design</li>
+              <li>Web Development</li>
+              <li>App Development</li>
+              <li>Website Maintanance</li>
+            </ul>
+          </div>
+
+          <div class="contact footer-div">
+            <h2>Contact Info</h2>
+            <ul>
+              <li><span class="material-symbols-outlined">call</span> 7696838961</li>
+              <li><span class="material-symbols-outlined">mail</span> prince1432810@gmail.com</li>
+              <li><i class="fa-brands fa-twitter"></i>@8001Prince4262</li>
+              <li><span class="material-symbols-outlined">location_on</span> Balachaur, 144526, SBS Nagar</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <script src="../myjs.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

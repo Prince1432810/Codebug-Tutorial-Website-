@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../bug1.png"/>
+    <title>CodeBug - Making Bug Fixes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <nav class="navbar bg-dark sticky-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+          <label for="snav"><span class="material-symbols-outlined mybtn btn" >sort</span></label>
+          <a class="navbar-brand" href="#"><b>&lt;&Backslash;&gt; CodeBug</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../docs.html">Docs</a>
+              </li>
+              <li class="nav-item">
+                <a href="../about_us.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="../contact_us.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Compiler
+                </a>
+                <ul class="dropdown-menu  dropdown-menu-end animate slideIn">
+                  <li><a class="dropdown-item" href="https://www.programiz.com/c-programming/online-compiler/">C</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/cpp-programming/online-compiler/">C++</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/java-programming/online-compiler/">Java</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/html/online-compiler/">HTML, CSS, JS</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/python-programming/online-compiler/">Python</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/csharp-programming/online-compiler/">C#</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/php/online-compiler/">PHP</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <label class="theme" for="changeColorCheckbox">
+                  <input type="checkbox" class="hide" id="changeColorCheckbox">
+                  <span class="material-symbols-outlined nav-link">light_mode</span>
+                </label>
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div class="navbar2">
+      <div class="nav-container">
+        <a href="../HTML/index.html" class="html-nav" id="full">HTML</a>
+        <a href="../CSS/index.html" class="css-nav">CSS</a>
+        <a class="js-nav disable" >JavaScript</a>
+        <a href="../Java/index.html" class="java-nav">Java</a>
+        <a class="c-nav disable" >C</a>
+        <a class="cpp-nav disable" >C++</a>
+      </div>
+    </div>
+    <input type="checkbox" id="snav">
+
+    <div class="main">
+      <section class="overlay"></section>
+      <aside>
+        <div class="sidebar" id="sidebar">
+          <h4>Introduction to HTML</h4>
+          
+          <a href="index.html">What is HTML</a>
+          <a href="history.html">History of HTML</a>
+          <a href="basic_structure.html">Basic structure</a>
+          
+          <h4>HTML Document Structure</h4>
+          
+          <a href="htmlhead.html">HTML Head</a>
+          <a href="html_body.html">HTML Body</a>
+          
+          <h4>HTML Text Formatting</h4>
+          
+          <a href="text_formatting_tags.html">Text formatting tags</a>
+          <a href="supsub.html">Superscript and Subscript</a>
+          <a href="strikethrough.html">Strikethrough</a>
+          <a href="semantic_text_elements.html">Semantic Text Elements</a>
+          
+          <h4>HTML Lists</h4>
+          
+          <a href="order_list.html">Ordered Lists</a>
+          <a href="unorder_list.html">Unordered Lists</a>
+          <a href="definition_list.html">Definition Lists</a>
+          
+          <h4>HTML Links</h4>
+          
+          <a href="creating_hyperlinks.html">Creating hyperlinks</a>
+          <a href="linking_to_external_websites.html">Linking to external websites</a>
+          <a href="linking_to_internal_pages.html">Linking to internal pages</a>
+          <a href="anchor_tags_and_navigation.html">Anchor tags and navigation</a>
+          
+          <h4>HTML Images</h4>
+          
+          <a href="embedding_images.html">Embedding images</a>
+          <a href="image_attributes.html">Image attributes</a>
+          <a href="image_maps.html">Image maps</a>
+          
+          <h4>HTML Forms</h4>
+          
+          <a href="creating_forms.html" class="cur-page">Creating forms</a>
+          <a href="form_elements.html">Form elements</a>
+          <a href="submitting_forms.html">Submitting forms and form validation</a>
+          
+          <h4>HTML Tables</h4>
+          
+          <a href="table_structure.html">Table structure</a>
+          <a href="table_styling.html">Table styling and attributes</a>
+          
+          <h4>HTML Semantic Elements</h4>
+          
+          <a href="semantic_html.html">Semantic HTML and its importance</a>
+          <a href="semantic_program.html">Semantic Tags Program</a> 
+          
+          <h4>HTML Multimedia</h4>
+          
+          <a href="embedding_audio.html">Embedding audio and video</a>
+          <a href="embedding_external_content.html">Embedding external content</a>
+          
+          <h4>HTML and CSS Integration</h4>
+          
+          <a href="linking_css.html">Linking CSS stylesheets to HTML</a>
+          <a href="inline_styles.html">Inline styles and internal styles</a>
+          <a href="understanding_cascade.html">Understanding the cascade in CSS</a>    
+          <br><br>
+        </div>
+      </aside>
+    
+      <div class="main-content">
+        <main>
+          <div class="page-nav">
+            <a href="anchor_tags_and_navigation.html" class="prev btn btn-outline-primary">&lt; Prev</a>
+            <a href="form_elements.html" class="next btn btn-outline-primary">Next &gt;</a>
+          </div>
+        <!-- content goes here  -->
+            <h1>What are Forms ?</h1>
+            <p>A form is a user interface element used to collect and submit data from a user to a server. It typically consists of input fields, such as text fields, checkboxes, radio buttons, dropdown lists, and buttons, as well as labels and other elements for organizing and styling the form.</p>
+            <p>Forms are commonly used on websites for various purposes, such as:</p>
+            <ol>
+                <li><b>User registration : </b>Collecting information from users to create an account on a website.</li>
+                <li><b>Contact forms : </b>Allowing users to send messages or inquiries to the website owner.</li>
+                <li><b>Search forms : </b>Allowing users to search for specific content on the website.</li>
+                <li><b>Order forms : </b> Collecting information from users to place an order for products or services.</li>
+                <li><b>Feedback forms : </b> Collecting feedback from users about their experience on the website.</li>
+            </ol>
+            <br>
+            <p>When a user submits a form, the data entered into the input fields is sent to a server for processing. This can be done using the <b>GET</b> or <b>POST</b> method, which determines how the data is sent to the server. The server then processes the data and may respond with a confirmation message or perform some action based on the submitted data.</p>
+            <p>Forms are an essential part of web development and are used to create interactive and dynamic web applications. They allow websites to collect and process user data, enabling a wide range of functionalities and interactions.</p><br>
+            <img src="form.jpg" alt="forms"style="background-size: cover; width: 100%; margin-left: auto; margin-right: auto; display: block; border: 2px solid black; border-radius: 5px;"><br><br>
+
+            <h2>Creating Forms</h2>
+            <p>Creating forms in HTML involves several elements and attributes that work together to collect and submit user data. Here's a detailed explanation of each step:</p>
+            <ol>
+                <li><h3>Start with the &lt;form&gt; tag : </h3>This tag is used to define the start and end of the form. It can have several attributes, but the most common ones are : </li>
+                    <ul>
+                        <li><h5 class="i">action : </h5>This attribute specifies the URL of the page that will process the form data when it's submitted. For example, <b>action="submit.php"</b> would send the form data to a PHP script called <b>submit.php</b>.</li><br>
+                        <li><h5 class="i">method : </h5> This attribute specifies how the form data will be sent to the server. The two most common methods are <b>GET</b> and <b>POST</b>. <b>GET</b> appends the form data to the URL, while <b>POST</b> sends it in the request body. For example, <b>method="post"</b> would send the form data using the <b>POST</b> method.</li><br>
+                    </ul>
+                <li><h3>Add input fields : </h3>Inside the &lt;form&gt; tag, you can add various input fields using the &lt;input&gt; tag. The <b>type</b> attribute specifies the type of input field (e.g., text, password, checkbox, radio button, etc.). The <b>name</b> attribute is used to identify the input field when the form is submitted.</li>
+                    <ul>
+                        <li>For example, <b>&lt;input type="text" name="username"&gt;</b> creates a text input field with the name username.</li><br>
+                    </ul>
+                <li><h3>Add labels : </h3>It's a good practice to add labels for each input field using the <b>&lt;label&gt;</b> tag. This improves accessibility and usability by making it clear what each input field is for.</li>
+                    <ul>
+                        <li>For example, <b>&lt;label for="username"&gt;Username:&lt;/label&gt;</b> creates a label for the input field with the <b>id</b> of <b>username</b>.</li><br>
+                    </ul>
+                <li><h3>Add a submit button : </h3>To allow users to submit the form, you can add a submit button using the <b>&lt;button&gt;</b> or <b>&lt;input&gt;</b> tag with <b>type="submit"</b>.</li>
+                    <ul>
+                        <li>For example, <b>&lt;button type="submit"&gt;Submit&lt;/button&gt;</b> creates a submit button with the label "Submit".</li><br>
+                    </ul>
+                <li><h3>Optional: Add other input types and attributes : </h3> HTML supports various input types and attributes that can be used to create more complex forms. Some common input types include : </li>
+                    <ul>
+                        <li><h5 class="i">password : </h5> Creates a password input field where the entered text is masked.</li>
+                        <li><h5 class="i">email : </h5>Creates an email input field that validates the input as an email address.</li>
+                        <li><h5 class="i">checkbox : </h5>Creates a checkbox input field that allows users to select multiple options.</li>
+                        <li><h5 class="i">radio : </h5>Creates a radio button input field that allows users to select one option from a group.</li>
+                        <li><h5 class="i">textarea : </h5>Creates a multiline text input field.</li>
+                        <li><h5 class="i">select : </h5>Creates a dropdown list of options.</li><br>
+                    </ul>
+                <li><h3>Optional: Add validation : </h3> You can use the <b>required</b> attribute to make an input field required, meaning the form cannot be submitted without filling it out. Additionally, you can use JavaScript to add custom validation logic.</li><br>
+                <li><h3>Optional: Add styling : </h3>You can use CSS to style the form and its elements to match the design of your website.</li><br>
+                <p>Here's an example of a more complex form that includes various input types and attributes:</p>
+<pre class="line-numbers"><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Complex Form&lt;/title&gt;
+    &lt;style&gt;
+        /* Add CSS styles here */
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;Complex Form&lt;/h2&gt;
+    &lt;form action="submit.php" method="post"&gt;
+        &lt;label for="username"&gt;Username:&lt;/label&gt;
+        &lt;input type="text" id="username" name="username" required&gt;&lt;br&gt;&lt;br&gt;
+        
+        &lt;label for="password"&gt;Password:&lt;/label&gt;
+        &lt;input type="password" id="password" name="password" required&gt;&lt;br&gt;&lt;br&gt;
+        
+        &lt;label for="email"&gt;Email:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email" required&gt;&lt;br&gt;&lt;br&gt;
+        
+        &lt;label for="gender"&gt;Gender:&lt;/label&gt;
+        &lt;input type="radio" id="male" name="gender" value="male"&gt;
+        &lt;label for="male"&gt;Male&lt;/label&gt;
+        &lt;input type="radio" id="female" name="gender" value="female"&gt;
+        &lt;label for="female"&gt;Female&lt;/label&gt;&lt;br&gt;&lt;br&gt;
+        
+        &lt;label for="hobbies">Hobbies:&lt;/label&gt;
+        &lt;input type="checkbox" id="hobby1" name="hobbies" value="reading"&gt;
+        &lt;label for="hobby1"&gt;Reading&lt;/label&gt;
+        &lt;input type="checkbox" id="hobby2" name="hobbies" value="cooking"&gt;
+        &lt;label for="hobby2">Cooking&lt;/label&gt;&lt;br>&lt;br&gt;
+        
+        &lt;label for="message"&gt;Message:&lt;/label&gt;&lt;br&gt;
+        &lt;textarea id="message" name="message" rows="4" cols="50"&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;
+        
+        &lt;label for="country"&gt;Country:&lt;/label&gt;
+        &lt;select id="country" name="country"&gt;
+            &lt;option value="usa"&gt;USA&lt;/option&gt;
+            &lt;option value="canada"&gt;Canada&lt;/option&gt;
+            &lt;option value="uk"&gt;UK&lt;/option&gt;
+        &lt;/select>&lt;br>&lt;br&gt;
+        
+        &lt;button type="submit"&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><br>
+</ol>
+<p>In this example, the form includes input fields for a username, password, email, gender, hobbies, message, and country. The username, password, email, and message fields are required, and the gender and hobbies fields use radio buttons and checkboxes, respectively, to allow users to select multiple options. The country field uses a dropdown list of options created with the <b>&lt;select&gt;</b> and <b>&lt;option&gt;</b> tags. The form will be submitted to a PHP script called <b>submit.php</b> using the <b>POST</b> method when the submit button is clicked.</p>
+            <p><b>Note : </b>This is still a basic example. In real-world applications, you would typically use more complex forms with additional input types, validation, and possibly JavaScript for interactivity.</p>
+
+        <!-- content ends here  -->
+        </main>
+        <div class="footer">
+          <div class="brand footer-div">
+              <h2>&lt;\&gt; CodeBug</h2>
+        <p>Designed by Santoshi, Manjot, Prince, Priya, Monika with &hearts;</p>
+        <p>Students of Bachelor of Computer Application</p>
+        
+      </div>
+
+      <div class="our-srvcs footer-div">
+        <h2>Our Services</h2>
+        <ul>
+          <li>Web Design</li>
+          <li>Web Development</li>
+          <li>App Development</li>
+          <li>Website Maintanance</li>
+        </ul>
+      </div>
+
+      <div class="contact footer-div">
+        <h2>Contact Info</h2>
+        <ul>
+          <li><span class="material-symbols-outlined">call</span> 7696838961</li>
+          <li><span class="material-symbols-outlined">mail</span> prince1432810@gmail.com</li>
+          <li><i class="fa-brands fa-twitter"></i>@8001Prince4262</li>
+          <li><span class="material-symbols-outlined">location_on</span> Balachaur, 144526, SBS Nagar</li>
+        </ul>
+      </div>
+      </div>
+  </div>
+</div>
+<script src="../myjs.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

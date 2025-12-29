@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="../bug1.png"/>
+    <title>CodeBug - Making Bug Fixes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <nav class="navbar bg-dark sticky-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+          <label for="snav"><span class="material-symbols-outlined mybtn btn" >sort</span></label>
+          <a class="navbar-brand" href="#"><b>&lt;&Backslash;&gt; CodeBug</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../docs.html">Docs</a>
+              </li>
+              <li class="nav-item">
+                <a href="../about_us.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="../contact_us.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Compiler
+                </a>
+                <ul class="dropdown-menu  dropdown-menu-end animate slideIn">
+                  <li><a class="dropdown-item" href="https://www.programiz.com/c-programming/online-compiler/">C</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/cpp-programming/online-compiler/">C++</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/java-programming/online-compiler/">Java</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/html/online-compiler/">HTML, CSS, JS</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/python-programming/online-compiler/">Python</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/csharp-programming/online-compiler/">C#</a></li>
+                  <li><a class="dropdown-item" href="https://www.programiz.com/php/online-compiler/">PHP</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <label class="theme" for="changeColorCheckbox">
+                  <input type="checkbox" class="hide" id="changeColorCheckbox">
+                  <span class="material-symbols-outlined nav-link">light_mode</span>
+                </label>
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div class="navbar2">
+      <div class="nav-container">
+        <a href="../HTML/index.html" class="html-nav" id="full">HTML</a>
+        <a href="../CSS/index.html" class="css-nav">CSS</a>
+        <a class="js-nav disable" >JavaScript</a>
+        <a href="../Java/index.html" class="java-nav">Java</a>
+        <a class="c-nav disable" >C</a>
+        <a class="cpp-nav disable" >C++</a>
+      </div>
+    </div>
+    <input type="checkbox" id="snav">
+
+    <div class="main">
+      <section class="overlay"></section>
+      <aside>
+        <div class="sidebar" id="sidebar">
+          <h4>Introduction to HTML</h4>
+          
+          <a href="index.html">What is HTML</a>
+          <a href="history.html" class="cur-page">History of HTML</a>
+          <a href="basic_structure.html">Basic structure</a>
+          
+          <h4>HTML Document Structure</h4>
+          
+          <a href="htmlhead.html">HTML Head</a>
+          <a href="html_body.html">HTML Body</a>
+          
+          <h4>HTML Text Formatting</h4>
+          
+          <a href="text_formatting_tags.html">Text formatting tags</a>
+          <a href="supsub.html">Superscript and Subscript</a>
+          <a href="strikethrough.html">Strikethrough</a>
+          <a href="semantic_text_elements.html">Semantic Text Elements</a>
+          
+          <h4>HTML Lists</h4>
+          
+          <a href="order_list.html">Ordered Lists</a>
+          <a href="unorder_list.html">Unordered Lists</a>
+          <a href="definition_list.html">Definition Lists</a>
+          
+          <h4>HTML Links</h4>
+          
+          <a href="creating_hyperlinks.html">Creating hyperlinks</a>
+          <a href="linking_to_external_websites.html">Linking to external websites</a>
+          <a href="linking_to_internal_pages.html">Linking to internal pages</a>
+          <a href="anchor_tags_and_navigation.html">Anchor tags and navigation</a>
+          
+          <h4>HTML Images</h4>
+          
+          <a href="embedding_images.html">Embedding images</a>
+          <a href="image_attributes.html">Image attributes</a>
+          <a href="image_maps.html">Image maps</a>
+          
+          <h4>HTML Forms</h4>
+          
+          <a href="creating_forms.html">Creating forms</a>
+          <a href="form_elements.html">Form elements</a>
+          <a href="submitting_forms.html">Submitting forms and form validation</a>
+          
+          <h4>HTML Tables</h4>
+          
+          <a href="table_structure.html">Table structure</a>
+          <a href="table_styling.html">Table styling and attributes</a>
+          
+          <h4>HTML Semantic Elements</h4>
+          
+          <a href="semantic_html.html">Semantic HTML and its importance</a>
+          <a href="semantic_program.html">Semantic Tags Program</a> 
+          
+          <h4>HTML Multimedia</h4>
+          
+          <a href="embedding_audio.html">Embedding audio and video</a>
+          <a href="embedding_external_content.html">Embedding external content</a>
+          
+          <h4>HTML and CSS Integration</h4>
+          
+          <a href="linking_css.html">Linking CSS stylesheets to HTML</a>
+          <a href="inline_styles.html">Inline styles and internal styles</a>
+          <a href="understanding_cascade.html">Understanding the cascade in CSS</a>    
+          <br><br>
+        </div>
+      </aside>
+          <div class="main-content">
+            <main>
+              <div class="page-nav">
+                <a href="index.html" class="prev btn btn-outline-primary">&lt; Prev</a>
+                <a href="basic_structure.html" class="next btn btn-outline-primary">Next &gt;</a>
+              </div>
+  
+              <h1>History of HTML</h1>
+              <p>HTML,which stands for <b>HyperText Markup Language</b>, is the basic language used to create web pages. It's like the skeleton of a webpage, providing the structure and layout. Here's a brief history of HTML :</p>
+              <ol>
+                <li><h3>Birth of the Web : </h3>Back in the late 1980s and early 1990s, a guy named Tim Berners-Lee came up with the idea of the World Wide Web. He needed a way to share documents easily among scientists, so he created HTML as a simple language to format these documents.4</li><br>
+                <li><h3>HTML 1.0 : </h3> In 1993, HTML 1.0 was born. It was very basic, allowing users to structure text into headings, paragraphs, and lists. There were no fancy features like images or tables yet.</li><br>
+                <li><h3>Growth and Evolution : </h3>As the web grew, so did HTML. With HTML 2.0 in 1995, more features were added like tables for better layout and forms for user input.</li><br> 
+                <img src="html-versions.jpg" style="background-size: cover; width: 80%; margin-left: auto; margin-right: auto; display: block;"><br><br>
+                <li><h3>HTML4 : </h3>In 1997, HTML 4.0 was released, bringing even more features like multimedia support (think images and videos), framesets for dividing the page, and better forms for collecting information.</li><br>
+                <li><h3>XHTML : </h3>Around 2000, HTML underwent a change called XHTML, which was basically HTML reformatted to follow stricter rules of XML, a more structured way of writing markup languages.</li><br>
+                <li><h3>HTML5 : </h3>HTML continued to evolve, and in 2014, HTML5 was officially released. It's the most recent version and introduced a ton of cool new features like native video and audio support, canvas for drawing, and better support for mobile devices.</li><br>
+                <li><h3>Continued Evolution : </h3> Since HTML5, there have been ongoing updates and improvements to HTML, with new features being added to make web pages more interactive and accessible.</li><br>
+              </ol>
+              <p>So, in short, HTML has come a long way from its humble beginnings as a simple way to share documents, evolving into a powerful language that forms the backbone of the modern web.</p>
+            </main>
+            <div class="footer">
+              <div class="brand footer-div">
+                <h2>CodeBug</h2>
+                <p>Designed by Santoshi, Manjot, Prince, Priya, Monika with &hearts;</p>
+                <p>Students of Bachelor of Computer Application</p>
+                
+              </div>
+    
+              <div class="our-srvcs footer-div">
+                <h2>Our Services</h2>
+                <ul>
+                  <li>Web Design</li>
+                  <li>Web Development</li>
+                  <li>App Development</li>
+                  <li>Website Maintanance</li>
+                </ul>
+              </div>
+    
+              <div class="contact footer-div">
+                <h2>Contact Info</h2>
+                <ul>
+                  <li><span class="material-symbols-outlined">call</span> 7696838961</li>
+                  <li><span class="material-symbols-outlined">mail</span> prince1432810@gmail.com</li>
+                  <li><i class="fa-brands fa-twitter"></i>@8001Prince4262</li>
+                  <li><span class="material-symbols-outlined">location_on</span> Balachaur, 144526, SBS Nagar</li>
+                </ul>
+              </div>
+            </div>
+
+      </div>
+      </div>
+      
+    <script src="../myjs.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
